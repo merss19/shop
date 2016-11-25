@@ -2,12 +2,12 @@
 .sell{
 	padding: 42px 0;
 
-	&__lixt{
-		padding-top:15px;
+	&__list{
+		padding-top:9px;
 	}
 
 	&__box{
-		padding-top:9px;
+		padding-top:17px;
 
 	}
 
@@ -36,18 +36,19 @@
 	}
 
 	&__info{
-		padding: 16px 0;
+		padding: 16px 0 5px;
 	}
 
 	&__item{
-		padding: 2px 0;
+		padding: 1px 0;
 		color: #000;
+		font-size:12px;
 		text-align: center;
 
 		&_type{
 			&_name{
-				font-size:12px;
-				font-family:$openSansBold;
+				font-size:14px;
+				font-family:$openSansSemiBold;
 			}
 
 			&_job{
@@ -57,14 +58,14 @@
 
 
 			&_contacts{
-				font-size:12px;
+				padding: 2px 0;
 			}
 		}
 	}
 
 	&__notice{
-		font-size: 11px;
-		padding: 0  5px 0 20px;
+		font-size: 12px;
+		padding: 15px 3px 0 5px;
 		line-height: 20px;
 	}
 

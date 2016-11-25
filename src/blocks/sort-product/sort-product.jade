@@ -7,13 +7,13 @@ mixin sort-product()
 				+e.text Cортировать:
 				+e.items
 					+e('a').item.active(href="") по цене
-						+svg('sort-product__icon sort-product__icon_type_price','popular')
+						+svg('svg-icon icon__popular','popular')
 					+e('a').item(href="") по популярности
 					+e('a').item(href="") по рейтингу
 			+e.view.clearfix
 				+e.text Показывать в виде:
 				+e.btns.js-toggle-view
 					+e('button').btn.active.js-toggle-item(type="button")
-						+svg('sort-product__icon sort-product__icon_type_view active','card')
+						+svg('svg-icon icon__card','card')
 					+e('button').btn.js-toggle-item(type="button")
-						+svg('sort-product__icon sort-product__icon_type_view','list')
+						+svg('svg-icon icon__list','list')

@@ -39,9 +39,7 @@ const modal = (($) => {
             this.overlay = $('.overlay_type_modal')
 
             this.clickHandler()
-            console.log('this.modal-constr')
-            console.log(this.modal)
-            console.log(this.overlay)
+
         }
 
 
@@ -63,12 +61,12 @@ const modal = (($) => {
             if(this.Id === "gallery") this.showGallery()
 
             this.overlay.on('click',() => {
-                console.log('overlay')
+
 
                 this.modal.fadeOut()
                 this.overlay.fadeOut()
                 this.modal.html('')
-                console.log(this.modal)
+
 
             })
 
@@ -92,7 +90,7 @@ const modal = (($) => {
             let activeTab = this.modal.find('.js-tabs__item.active')
               // $('.js-tabs').tabs()
                     console.log('activeTab')
-            console.log(activeTab)
+
 
 
            $('.js-tabs').tabs()
@@ -138,8 +136,7 @@ const modal = (($) => {
 
 
             if(this.close.length){
-                console.log('close')
-                console.log(this.close)
+
                 this.close.on('click', () => {
                     this.modal.fadeOut(700)
                     this.overlay.fadeOut(400)

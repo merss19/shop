@@ -7,19 +7,20 @@ mixin cart()
 		+e.header Оформление заказа
 		+e.item
 			+e.title Корзина товаров
-			+e.list.table.js-cart__table
-				+e.head.table-row
-					+e.head-item
-					+e.head-item
-					+e.head-item Кол-во
-					+e.head-item Цена
-					+e.head-item Скидка
-					+e.head-item Итого
-				+cart-line()
-				+cart-line()
-			+e.total
-				|Стоимость:
-				+e.total-sum 141 220
+			+e.container.js-cart
+				+e.list.table
+					+e.head.table-row
+						+e.head-item
+						+e.head-item
+						+e.head-item Кол-во
+						+e.head-item Цена
+						+e.head-item Скидка
+						+e.head-item Итого
+					+cart-line()
+					+cart-line()
+				+e.total
+					|Стоимость:
+					+e.total-sum 141 220
 			+e.empty.js-empty Нет товаров
 		+e.item
 			+delivery()

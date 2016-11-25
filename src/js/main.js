@@ -29,36 +29,40 @@ $('.js-modal-btn').modal()
 
 
     btns.on('click','.js-toggle-item', function(){
+        console.log(this)
 
         if($(this).hasClass('active')) return
-
         $(this).toggleClass('active').siblings().toggleClass('active')
-        $(this).siblings().find('svg').toggleClass('active')
-        $(this).find('svg').toggleClass('active')
         list.toggleClass('list-view')
+    })
+
+
+//wish
+
+    $('.js-wish').on('click', function(){
+        console.log(this)
+            $(this).toggleClass('active')
     })
 
 //cart
 
-    let table = $('.js-cart__table')
+    let cart= $('.js-cart')
 
-    if(table.length){
+    if(cart.length){
 
-        table.on('click', '.js-cart__delete', (e) =>{
+        cart.on('click', '.js-cart__delete', (e) =>{
 
             let product = $(e.target).closest('.js-cart__product'),
-                table = $(e.target).closest('.table'),
-                total =table.siblings('.cart__total'),
-                empty = table.siblings('.js-empty')
+                container =$(e.target).closest('.js-cart'),
+                empty = container.siblings('.js-empty')
 
             product.remove()
-            let products = table.find('.js-cart__product')
+            let products = container.find('.js-cart__product')
 
-
+            console.log(products.length)
 
             if(!products.length){
-               table.css('display', 'none')
-                total.css('display', 'none')
+                container.css('display', 'none')
                 empty.css('display', 'block')
             }
 

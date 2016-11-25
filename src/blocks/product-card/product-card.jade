@@ -10,8 +10,15 @@ mixin product-card()
 					+e.code
 						+e.text код товара:
 						+e.num 219-926
-					+e.wish
+					+e.wish.js-wish
 						+svg('svg-icon icon__wish','wish')
+						+svg('svg-icon icon__wish-fill','wish-fill')
+					+e.options
+						+e.options-item
+							+svg('svg-icon icon__auto','auto')
+						+e.options-item
+							+svg('svg-icon icon__stock','stock')
+
 				+e.stock На складе
 					+svg('svg-icon icon__stock','stock')
 			+e('a').name(href="detail.html") Apple iMac (MK462RU/A) 27" Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB
@@ -30,19 +37,24 @@ mixin product-card()
 						+e.params-text Разрешение:
 						+e.params-value 5120 х 2880
 				+e.more
-					+e('a').delivery(href="") Cегодня
-						+svg('product-card__icon product-card__icon_type_delivery','auto')
-					+e('a').delivery(href="") Завтра
-						+svg('product-card__icon product-card__icon_type_delivery','home')
-					+e('a').more-text(href="") Подробнее
+					+e('a').delivery.side-link(href="") Cегодня
+						+svg('svg-icon icon__auto','auto')
+					+e('a').delivery.side-link(href="") Завтра
+						+svg('svg-icon icon__home','home')
+					+e('a').more-text.main-link(href="") Подробнее
 
 				+e.action.clearfix
 					+e.price
-						+e.price-main 123 740
-						+e('s').price-old 850
-						+e('a').price-text(href="") подробные цены
+						+e.price-main
+							|123 740
+							+b('span').rub o
+						+e('s').price-old
+							|850
+							+b('span').rub o
+						+e('a').price-text(href="") подробные цены...
 					+e.btn
 						+b('a').main-btn.js-modal-btn(data-modal="add",href="") Купить
 						+b('a').main-btn._type_list.js-modal-btn(data-modal="add",href="")
-							+svg('product-card__icon-btn','cart')
+							//icon__stock,icon__cart
+							+svg('svg-icon icon__cart','cart')
 							+e.text Купить

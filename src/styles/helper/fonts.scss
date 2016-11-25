@@ -1,6 +1,8 @@
 // Var for using custom font
 $openSansReg: 'openSansReg', Helvetica, Arial, sans-serif;
 $openSansBold: 'openSansBold', Helvetica, Arial, sans-serif;
+$openSansSemiBold: 'openSansSemiBold', Helvetica, Arial, sans-serif;
+
 $futuraDemi: 'futuraDemi', Helvetica, Arial, sans-serif;
 $futuraHeavy: 'futuraHeavy', Helvetica, Arial, sans-serif;
 $futuraBook: 'futuraBook', Helvetica, Arial, sans-serif;
@@ -23,6 +25,14 @@ $rub: 'rub', Helvetica, Arial, sans-serif;
   src: url('../fonts/OpenSansRegular/OpenSansRegular.eot');
   src: url('../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix') format('embedded-opentype'),
   url('../fonts/OpenSansRegular/OpenSansRegular.woff') format('woff');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+@font-face {
+  font-family: 'openSansSemiBold';
+  src: url('../fonts/OpenSansSemiBold/OpenSansSemiBold.eot');
+  src: url('../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSansSemiBold/OpenSansSemiBold.woff') format('woff');
   font-weight: 400;       // For normal width. It could has another value
   font-style: normal;     // Also could has another value
 }

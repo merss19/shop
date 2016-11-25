@@ -99,133 +99,139 @@ option{
 
 .svg-icon {
 	position: absolute;
+}
+.icon {
 
-	&.icon {
+	&__wish,
+	&__wish-fill{
+		width: 18px;
+		height: 16px;
+		fill: #ddd;
+	}
 
-		&__wish {
-			width: 18px;
-			height: 16px;
-			fill: #ddd;
-		}
+	&__stock {
+		width: 20px;
+		height: 20px;
+		fill: $color-grey;
+	}
 
-		&__stock {
-			width: 20px;
-			height: 20px;
-			fill: $color-grey;
-		}
+	&__delivery{
+		width: 40px;
+		height: 22px;
+		fill:$color-grey;
+	}
 
-		&__delivery{
-			width: 40px;
-			height: 22px;
-			fill:$color-grey;
-		}
+	&__home{
+		width: 27px;
+		height: 24px;
+		fill: $color-grey;
+	}
 
-		&__home{
-			width: 27px;
-			height: 24px;
-			fill: $color-grey;
-		}
+	&__garant{
+		width: 22px;
+		height: 22px;
+		fill: $color-grey;
+	}
 
-		&__garant{
-			width: 22px;
-			height: 22px;
-			fill: $color-grey;
-		}
+	&__loop{
+		width: 16px;
+		height: 16px;
+		fill: $color-grey;
+	}
 
-		&__loop{
-			width: 16px;
-			height: 16px;
-			fill: $color-grey;
-		}
+	&__weght{
+		width: 41px;
+		height: 24px;
+		fill: $color-grey;
+	}
 
-		&__weght{
-			width: 41px;
-			height: 24px;
-			fill: $color-grey;
-		}
+	&__size{
+		width: 25px;
+		height: 22px;
+		fill: $color-grey;
+	}
 
-		&__size{
-			width: 25px;
-			height: 22px;
-			fill: $color-grey;
-		}
+	&__go{
+		width:5px;
+		height:12px;
+		fill: #615c5c;
+	}
 
-		&__go{
-			width:5px;
-			height:12px;
-			fill: #615c5c;
-		}
+	&__star{
+		width:16px;
+		height:16px;
+		fill:#ddd;
+	}
 
-		&__star{
-			width:16px;
-			height:16px;
-			fill:#ddd;
-		}
+	&__logo{
+		width:70px;
+		height:70px;
+	}
 
-		&__logo{
-			width:70px;
-			height:70px;
-		}
+	&__popular{
+		width:6px;
+		height:6px;
+		fill: $color-grey;
+	}
 
-		&__popular{
-			width:6px;
-			height:6px;
-			fill: $color-grey;
-		}
+	&__faq{
+		width:20px;
+		height:18px;
+		fill: $color-grey;
+	}
 
-		&__faq{
-			width:20px;
-			height:18px;
-			fill: $color-grey;
-		}
+	&__phone{
+		width: 40px;
+		height: 38px;
+		fill: $color-main;
+	}
 
-		&__phone{
-			width: 40px;
-			height: 38px;
-			fill: $color-main;
-		}
+	&__clock{
+		width: 40px;
+		height: 38px;
+		fill: $color-main;
+	}
 
-		&__clock{
-			width: 40px;
-			height: 38px;
-			fill: $color-main;
-		}
+	&__location{
+		width: 13px;
+		height: 13px;
+		fill: $color-main;
+	}
 
-		&__location{
-			width: 13px;
-			height: 13px;
-			fill: $color-main;
-		}
+	&__list{
+		width: 20px;
+		height: 20px;;
+		fill: #fff;
+	}
 
-		&__list{
-			width: 20px;
-			height: 20px;;
-			fill: #fff;
-		}
+	&__card{
+		width: 20px;
+		height: 20px;;
+		fill: #fff;
+	}
 
-		&__user{
-			width: 17px;
-			height: 17px;
-			fill: #fff;
-		}
+	&__user{
+		width: 17px;
+		height: 17px;
+		fill: #fff;
+	}
 
-		&__cart{
-			width: 24px;
-			height: 17px;
-			fill: #fff;
-		}
+	&__cart{
+		width: 24px;
+		height: 17px;
+		fill: #fff;
+	}
 
-		&__auto{
-			fill:#ccc;
-			width:18px;
-			height:18px;
-		}
+	&__auto{
+		fill:#ccc;
+		width:18px;
+		height:18px;
+	}
 
-		&__percent{
-			fill:#ccc;
-			width:18px;
-			height:18px;
-		}
+	&__percent{
+		fill:#ccc;
+		width:18px;
+		height:18px;
 	}
 }
 

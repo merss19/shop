@@ -19,11 +19,11 @@
 	&__info {
 		float: left;
 		width: 68%;
-		padding-left:21px;
+		padding-left:18px;
 	}
 	
 	&__top{
-		padding: 15px 0 10px;
+		padding: 17px 0 10px;
 		font-size:12px;
 		position: relative;
 	}
@@ -35,7 +35,7 @@
 	&__stock{
 		float: right;
 		position: relative;
-		font-size:11px;
+		font-size:12px;
 		color: #aba9a9;
 	}
 
@@ -43,7 +43,30 @@
 		position: relative;
 	}
 
-	&__icon{
+	.icon__stock{
+		left: -32px;
+		top: -3px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.icon__home{
+		left: -24px;
+		top: 0;
+		width: 18px;
+		height: 18px;
+	}
+
+	.icon__auto{
+		left: -24px;
+		top: 0;
+	}
+
+
+
+
+
+	/*&__icon{
 		fill:#ddd;
 		width:18px;
 		height:16px;
@@ -76,9 +99,9 @@
 			}
 		}
 	}
-
+*/
 	&__name{
-		padding: 11px 0;
+		padding: 8px 0;
 		font-size: 20px;
 		display: block;
 		line-height: 19px;
@@ -90,7 +113,7 @@
 	}
 
 	&__bottom{
-		padding:22px 0;
+		padding:25px 0;
 	}
 
 	&__params{
@@ -102,6 +125,7 @@
 			font-size:12px;
 			display: table-cell;
 			width: 61%;
+			color: #716767;
 		}
 
 		&-value{
@@ -118,26 +142,14 @@
 		padding-top: 12px;
 		
 		&-text{
-			margin-top: 20px;
-			text-transform: uppercase;
-			margin-left: 41px;
-			font-size: 10px;
-			letter-spacing: 1px;
-			color: $color-main;
-			font-family:$futuraBook;
-			border-bottom:1px dashed $color-main;
-			display: inline-block;
-
-			&:hover{
-				border-bottom:1px solid $color-main;
-			}
-
+			margin: 22px 0 0 39px;
 		}
 	}
 
 	&__action{
 		float: left;
 		width:31%;
+		margin-top: -2px;
 	}
 
 	&__price{
@@ -148,7 +160,7 @@
 		&-main{
 			font-size:24px;
 			color: #000;
-			padding-right: 33px;
+			padding-right: 10px;
 
 		}
 		
@@ -156,7 +168,7 @@
 			color: $color-mark;
 			position: absolute;
 			top: -18px;
-			right: 35px;
+			right: 11px;
 			font-size:18px;
 		}
 
@@ -177,21 +189,13 @@
 	}
 
 	&__delivery{
-		text-align: center;
 		position: relative;
-		display: inline-block;
 		margin-left: 65px;
-		margin-bottom:3px;
-		color: #adaaaa;
-		border-bottom:1px dashed #adaaaa;
-
-		&:hover{
-			border-bottom:1px solid #ddd;
-		}
+		margin-bottom:1px;
 	}
 
 	&__btn{
-		margin-top: 11px;
+		margin-top: 12px;
 	}
 
 	.main-btn{
@@ -204,9 +208,10 @@
 	}
 
 	.icon__stock{
-		left: -32px;
-		top: -3px;
+		left: -28px;
+		top: -2px;
 	}
+
 
 }
 
@@ -216,6 +221,10 @@
 
 		&__pic{
 			display: none;
+		}
+
+		&__top{
+			padding-bottom:7px;
 		}
 
 		&__code{
@@ -248,7 +257,7 @@
 		&__name{
 			float: left;
 			width:69%;
-			padding: 11px 0;
+			padding: 10px 0 10px 4px;
 			font-size: 14px;
 		}
 
@@ -264,11 +273,11 @@
 
 		&__price{
 			float: left;
-			width: 64%;
+			width: 66%;
 
 			&-main{
 				font-size:16px;
-				padding:12px 12px 0 0;
+				padding:9px 0 0 0;
 			}
 
 			&-old{
@@ -276,15 +285,15 @@
 			}
 
 			&-text{
-				font-size:9px;
-				margin-top:5px;
+				font-size: 10px;
+				margin-top: 4px;
 				padding-right:0;
 			}
 		}
 
 		&__btn{
 			float: right;
-
+			margin-top:10px;
 		}
 	}
 
@@ -300,15 +309,52 @@
 		}
 
 		&__text{
-			display: block;
 			font-size:8px;
 			font-family:$futuraHeavy;
 			text-transform: uppercase;
 		}
 	}
+
+	.block-code{
+		&__options{
+			display: block;
+		}
+		&__code{
+			margin-top: -7px;
+		}
+
+		&__wish{
+			display: none;
+		}
+
+		&__text{
+			display: none;
+		}
+	}
+
+	.icon__cart{
+		position: static;
+		margin-top: 5px;
+	}
 }
 
 .block-code{
+
+	&__options{
+		display: none;
+		padding-top:5px;
+
+		&-item{
+			display: inline-block;
+		}
+
+		.icon__stock,
+		.icon__auto{
+			position: static;
+			width:15px;
+			height:15px;
+		}
+	}
 
 	&__text{
 		font-size:12px;
@@ -320,19 +366,39 @@
 		font-size:14px;
 		color: $color-main;
 		font-family:$futuraDemi;
+		letter-spacing: 0.4px;
 	}
 
 	&__wish{
 		position: relative;
+		cursor: pointer;
+		transition:all 0.4s;
+
+		&:hover .icon__wish-fill{
+			display: block;
+		}
+
+		&.active{
+
+			.icon__wish-fill{
+				fill:$color-main;
+				display: block;
+			}
+
+		}
 	}
 
 	.icon__wish{
 		top: -17px;
-		right: -34px;
-
-		/*&:hover{
-			fill:;
-		}*/
+		right: -27px;
 	}
+
+	.icon__wish-fill{
+		top: -17px;
+		right: -27px;
+		display: none;
+	}
+
+
 
 }

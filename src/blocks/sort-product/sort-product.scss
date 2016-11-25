@@ -18,28 +18,17 @@
 		float: left;
 	}
 
-	&__icon{
-		fill:#ddd;
-		position: absolute;
+	.icon__list,
+	.icon__card{
+		 fill:$color-grey;
+		 width:20px;
+		 height:16px;
+		 position: static;
+	 }
 
-		&_type{
-			&_price{
-				width: 8px;
-				height: 8px;
-				top: 7px;
-				right: 8px;
-			}
-
-			&_view{
-				width:20px;
-				height:16px;
-				position: static;
-
-				&.active{
-					fill:$color-main;
-				}
-			}
-		}
+	.icon__popular{
+		top: 7px;
+		right: 13px;
 	}
 
 	&__items{
@@ -73,30 +62,11 @@
 		cursor: pointer;
 
 		&.active{
-			cursor: default;
+			.icon__card,
+			.icon__list{
+				fill:$color-main;
+				cursor: default;
+			}
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

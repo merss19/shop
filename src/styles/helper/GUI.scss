@@ -22,7 +22,7 @@
 	&_type{
 		&_list{
 			width: 48px;
-			height: 42px;
+			height: 40px;
 			line-height:12px;
 		}
 	}
@@ -46,5 +46,41 @@
 
 	&:hover {
 		background: #dcc300;
+	}
+}
+
+.main-link{
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: $color-main;
+	font-family: $futuraBook;
+	border-bottom: 1px dashed $color-main;
+	display: inline-block;
+
+	&:hover{
+		border-bottom: 1px solid $color-main;
+	}
+
+	&:active{
+		color: $color-main-hover;
+		border-bottom: 1px solid $color-main;
+	}
+ }
+
+.side-link{
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	color: $color-grey;
+	border-bottom: 1px dashed $color-grey;
+
+	&:hover{
+		border-bottom: 1px solid $color-grey;
+	}
+
+	&:active{
+		color: $color-main-hover;
+		border-bottom: 1px solid $color-grey-dark;
 	}
 }

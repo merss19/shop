@@ -7,7 +7,7 @@
 
 	.icon__list{
 		z-index:2;
-		top: 31px;
+		top: 29px;
 		left: 77px;
 	}
 
@@ -17,8 +17,8 @@
 	}
 
 	.icon__user{
-		top: 33px;
-		left: 9px;
+		top: 31px;
+		left: 8px;
 	}
 	&__drop{
 		&-menu{
@@ -28,8 +28,8 @@
 		}
 		&-cart{
 			position: absolute;
-			top: 80px;
-			right: 162px;
+			top: 32px;
+			left: 14px;
 		}
 	}
 
@@ -44,11 +44,10 @@
 		background: transparent;
 		border: none;
 		margin: auto;
-		padding: 0 0 0 25px;
+		padding: 1px 0 0 33px;
 		display: inline-block;
 		position: relative;
 		width: 100%;
-		letter-spacing: -0.8px;
 		height:80px;
 		font-family:$futuraHeavy;
 		//transition:all 0.4s;
@@ -88,8 +87,8 @@
 
 	&__search{
 		float: left;
-		width: 52.5%;
-		padding: 21px 20px;
+		width: 52.7%;
+		padding: 20px 21px;
 
 	}
 
@@ -98,19 +97,18 @@
 		padding: 10px 15px;
 		border:none;
 		font-size: 14px;
-		letter-spacing: -0.7px;
 	}
 
 	&__user{
 		float: left;
-		width: 23.7%;
+		width: 23.5%;
 	}
 
 	&__item{
 		float: left;
 		position: relative;
 		width:47.3%;
-		padding: 32px 0 0 25px;
+		padding: 32px 0 0 32px;
 		height: 80px;
 		text-align: center;
 		cursor: pointer;
@@ -127,13 +125,13 @@
 		&-value{
 			display: inline-block;
 			font-family:$futuraHeavy;
-			line-height: 15px;
+			margin-bottom: 4px;
+			line-height: 18px;
 		}
 
 		&-text{
 			font-size: 14px;
 			font-family:$futuraHeavy;
-			letter-spacing: -0.5px;
 
 			&:before{
 				position: absolute;
@@ -148,7 +146,7 @@
 			}
 
 			&_cart{
-				padding: 19px 0 0 11px;
+				padding: 19px 0 0 15px;
 			}
 
 
@@ -156,21 +154,19 @@
 	}
 
 	&__total{
-		margin-top: -2px;
-		padding-left: 6px;
+		margin-top: -5px;
 		font-family:$openSansReg;
+		font-size: 12px;
 	}
 
 	&__num{
 		display: inline-block;
 		padding-right: 2px;
-		font-size: 12px;
 	}
 
 	&__auth{
 		text-align: left;
-		padding-left: 3px;
-		margin-top: -1px;
+		margin: -2px 0 0 -2px;
 		font-family:$openSansReg;
 
 		&-result{

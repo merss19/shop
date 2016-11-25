@@ -8,7 +8,7 @@
 
 	&__contacts{
 		float: right;
-		margin:0 -30px;
+		margin:0 -32px;
 		padding-top: 3px;
 	}
 
@@ -23,13 +23,13 @@
 		display: inline-block;
 		position: absolute;
 		bottom: 10px;
-		right: 19px;
+		right: -11px;
 		letter-spacing: 1px;
 	}
 
 	&__item{
 		float: left;
-		padding:0 13px;
+		padding:0 15px;
 	}
 
 	&__link{
@@ -37,7 +37,7 @@
 		font-size: 16px;
 		text-transform: uppercase;
 		font-family:$futuraDemi;
-		letter-spacing:-0.1px;
+		letter-spacing: 0.7px;
 
 		&:hover{
 			text-decoration: underline;
@@ -55,18 +55,18 @@
 	}
 
 	.icon__phone{
-		left: -53px;
+		left: -51px;
 		top: 2px;
 	}
 
 	.icon__clock{
-		left: 6px;
+		left: 3px;
 		top: 2px;
 	}
 
 	.icon__location{
-		left: -20px;
-		top: 4px;
+		left: -23px;
+		top: 5px;
 	}
 
 	&__box{
@@ -76,7 +76,7 @@
 		color: $color-main;
 
 		&:first-child{
-			padding: 2px 59px 0 0;
+			padding: 1px 55px 0 0;
 		}
 
 		&:before{
@@ -90,7 +90,6 @@
 	&__phone{
 		font-size:22px;
 		font-family:$futuraBook;
-		letter-spacing: -0.5px;
 	}
 
 	&__time{
@@ -102,7 +101,7 @@
 
 		&-more{
 			color: #b4b4b4;
-			padding: 7px 0 0 3px;
+			padding: 5px 0 1px 4px;
 			font-size: 11px;
 		}
 
@@ -113,7 +112,7 @@
 			padding:0;
 			font-size: 11px;
 			display: block;
-			margin: -1px 0 0 3px;
+			margin: -1px 0 0 5px;
 
 			&:hover{
 				border-bottom: 1px solid  $color-main;
@@ -128,21 +127,15 @@
 		}
 
 		&-days{
-			font-size: 16px;
-			text-transform: uppercase;
+			font-size: 18px;
 			font-family:$futuraBook;
+			margin-top: -3px;
 		}
 
 		&-location{
 			font-size: 10px;
 			padding-top: 4px;
 			position: relative;
-
-			&:before{
-				position: absolute;
-				top: 10px;
-				left: -10px;
-			}
 		}
 	}
 
