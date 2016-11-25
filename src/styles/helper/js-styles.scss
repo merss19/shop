@@ -1,0 +1,50 @@
+.overlay{
+	z-index: 3;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.1;
+	height: 100%;
+	top: 213px;
+	left: 0;
+	right:0;
+	cursor: pointer;
+	display: none;
+
+	&_type{
+		&_modal{
+			top:0;
+		}
+	}
+
+	&_type{
+		&_drop{
+			top: 213px;
+		}
+	}
+}
+
+
+.js-drop__list{
+	display: none;
+	z-index: 4;
+}
+
+.js-tabs__box{
+	display: none;
+
+	&.active{
+		display: block;
+	}
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	top: 25%;
+	right: 0;
+	left: 0;
+	z-index: 5;
+	padding: 20px 10px;
+	margin: auto;
+	width: 768px;
+}

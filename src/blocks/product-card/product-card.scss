@@ -1,0 +1,338 @@
+.product-card {
+	padding: 10px 0 0;
+	border-bottom: 1px solid #eee;
+
+	&__pic {
+		float: left;
+		text-align: center;
+		padding:17px 25px;
+		width:32%;
+	}
+
+	&__img{
+		max-width: 225px;
+		max-height: 210px;
+		width: 100%;
+		height: auto;
+	}
+
+	&__info {
+		float: left;
+		width: 68%;
+		padding-left:21px;
+	}
+	
+	&__top{
+		padding: 15px 0 10px;
+		font-size:12px;
+		position: relative;
+	}
+	
+	&__left{
+		float: left;
+	}
+
+	&__stock{
+		float: right;
+		position: relative;
+		font-size:11px;
+		color: #aba9a9;
+	}
+
+	&__code{
+		position: relative;
+	}
+
+	&__icon{
+		fill:#ddd;
+		width:18px;
+		height:16px;
+		position: absolute;
+
+		&-btn{
+			fill:#fff;
+			margin-top:8px;
+			width:18px;
+			height:16px;
+		}
+
+		&_type{
+			&_wish{
+				top: -17px;
+				right: -34px;
+			}
+
+			&_stock{
+				left: -32px;
+				top: -3px;
+				width: 20px;
+				height: 20px;
+				fill:#aba9a9;
+			}
+
+			&_delivery{
+				left: -24px;
+				top: 0px;
+			}
+		}
+	}
+
+	&__name{
+		padding: 11px 0;
+		font-size: 20px;
+		display: block;
+		line-height: 19px;
+		color: #000;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	&__bottom{
+		padding:22px 0;
+	}
+
+	&__params{
+		float: left;
+		width:45%;
+		padding-top: 12px;
+
+		&-text{
+			font-size:12px;
+			display: table-cell;
+			width: 61%;
+		}
+
+		&-value{
+			font-size:14px;
+			display: table-cell;
+			font-weight: bold;
+		}
+	}
+
+	&__more{
+		float: left;
+		width:24%;
+		font-size: 12px;
+		padding-top: 12px;
+		
+		&-text{
+			margin-top: 20px;
+			text-transform: uppercase;
+			margin-left: 41px;
+			font-size: 10px;
+			letter-spacing: 1px;
+			color: $color-main;
+			font-family:$futuraBook;
+			border-bottom:1px dashed $color-main;
+			display: inline-block;
+
+			&:hover{
+				border-bottom:1px solid $color-main;
+			}
+
+		}
+	}
+
+	&__action{
+		float: left;
+		width:31%;
+	}
+
+	&__price{
+		text-align: right;
+		position: relative;
+		font-family:$openSansBold;
+
+		&-main{
+			font-size:24px;
+			color: #000;
+			padding-right: 33px;
+
+		}
+		
+		&-old{
+			color: $color-mark;
+			position: absolute;
+			top: -18px;
+			right: 35px;
+			font-size:18px;
+		}
+
+		&-text{
+			font-size:12px;
+			color: #c5c4c4;
+			font-family:$openSansReg;
+			padding-right: 9px;
+			display: block;
+			text-decoration: underline;
+			margin-bottom: -2px;
+
+			&:hover{
+				text-decoration: none;
+			}
+
+		}
+	}
+
+	&__delivery{
+		text-align: center;
+		position: relative;
+		display: inline-block;
+		margin-left: 65px;
+		margin-bottom:3px;
+		color: #adaaaa;
+		border-bottom:1px dashed #adaaaa;
+
+		&:hover{
+			border-bottom:1px solid #ddd;
+		}
+	}
+
+	&__btn{
+		margin-top: 11px;
+	}
+
+	.main-btn{
+		&_type{
+			&_list{
+				display: none;
+			}
+
+		}
+	}
+
+	.icon__stock{
+		left: -32px;
+		top: -3px;
+	}
+
+}
+
+.list-view{
+	.product-card{
+		padding:0;
+
+		&__pic{
+			display: none;
+		}
+
+		&__code{
+			&-text{
+				display: none;
+			}
+		}
+
+		&__wish{
+			display: none;
+		}
+
+		&__stock,
+		&__params,
+		&__more{
+			display: none;
+		}
+
+		&__info{
+			float: left;
+			width:100%;
+			padding:0;
+		}
+
+		&__top{
+			float: left;
+			width:11%;
+		}
+
+		&__name{
+			float: left;
+			width:69%;
+			padding: 11px 0;
+			font-size: 14px;
+		}
+
+		&__bottom{
+			float: left;
+			width:20%;
+			padding:0;
+		}
+
+		&__action{
+			width:100%;
+		}
+
+		&__price{
+			float: left;
+			width: 64%;
+
+			&-main{
+				font-size:16px;
+				padding:12px 12px 0 0;
+			}
+
+			&-old{
+				display: none;
+			}
+
+			&-text{
+				font-size:9px;
+				margin-top:5px;
+				padding-right:0;
+			}
+		}
+
+		&__btn{
+			float: right;
+
+		}
+	}
+
+	.main-btn{
+		display: none;
+
+		&_type{
+			&_list{
+				display: block;
+				position: relative;
+			}
+
+		}
+
+		&__text{
+			display: block;
+			font-size:8px;
+			font-family:$futuraHeavy;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.block-code{
+
+	&__text{
+		font-size:12px;
+		display: inline-block;
+	}
+
+	&__num{
+		display: inline-block;
+		font-size:14px;
+		color: $color-main;
+		font-family:$futuraDemi;
+	}
+
+	&__wish{
+		position: relative;
+	}
+
+	.icon__wish{
+		top: -17px;
+		right: -34px;
+
+		/*&:hover{
+			fill:;
+		}*/
+	}
+
+}

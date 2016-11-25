@@ -1,0 +1,50 @@
+
+.product-carousel {
+	position: relative;
+	padding-right: 25px;
+
+	&__list{
+		padding:10px 0;
+	}
+
+	&__item {
+		float: left;
+		height:140px;
+	}
+
+	&__nav{
+		width: 10px;
+		height: 36px;
+		background: #ddd;
+		right: 11px;
+		position: absolute;
+		top: 36%;
+		cursor: pointer;
+	}
+
+	&__img{
+		width: 60px;
+		height: 60px
+	}
+
+	&__product{
+		text-align: center;
+		font-size: 12px;
+		line-height: 19px;
+	}
+
+	.icon__go{
+		position: relative;
+		top: 7px;
+		left: 2px;
+	}
+
+	&__pic{
+		text-align: center;
+		margin-bottom: 7px;
+	}
+
+	&__price{
+		font-weight:bold;
+	}
+}

@@ -1,0 +1,26 @@
+mixin modal-gallery()
+	+b.modal-gallery
+		+e('button').close.js-modal-close(type="button")
+			+e &times;
+		+e('ul').list.js-gallery
+			+e('li').item(data-thumb="assets/img/content/detail.jpg")
+				+e('img').img(src = 'assets/img/content/detail.jpg')
+			+e('li').item(data-thumb="assets/img/content/detail.jpg")
+				+e('img').img(src = 'assets/img/content/detail.jpg')
+			+e('li').item(data-thumb="assets/img/content/detail.jpg")
+				+e('img').img(src = 'assets/img/content/detail.jpg')
+			+e('li').item(data-thumb="assets/img/content/detail.jpg")
+				+e('img').img(src = 'assets/img/content/detail.jpg')
+		+e.nav.js-next
+			+svg('svg-icon icon__go ','go')
+		+e.nav_type_prev.js-prev
+			+svg('svg-icon icon__go ','go')
+		//+e.thumb-list.clearfix#bx-pager
+			+e('a').thumb-item(data-slide-index="0", href="")
+				+e('img').thumb-img(src="assets/img/content/detail.jpg")
+			+e('a').thumb-item(data-slide-index="1", href="")
+				+e('img').thumb-img(src="assets/img/content/detail.jpg")
+			+e('a').thumb-item(data-slide-index="2", href="")
+				+e('img').thumb-img(src="assets/img/content/detail.jpg")
+			+e('a').thumb-item(data-slide-index="3", href="")
+				+e('img').thumb-img(src="assets/img/content/detail.jpg")

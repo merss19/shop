@@ -1,0 +1,48 @@
+include ../svg/svg
+
+mixin product-card()
+	+b.product-card.clearfix
+		+e('a').pic(href="detail.html")
+			+e('img').img(src = 'assets/img/content/imac-card.jpg')
+		+e.info.clearfix
+			+e.top.clearfix
+				+e.left.block-code__
+					+e.code
+						+e.text код товара:
+						+e.num 219-926
+					+e.wish
+						+svg('svg-icon icon__wish','wish')
+				+e.stock На складе
+					+svg('svg-icon icon__stock','stock')
+			+e('a').name(href="detail.html") Apple iMac (MK462RU/A) 27" Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB
+			+e.bottom.clearfix
+				+e('ul').params.table
+					+e('li').params-item.table-row
+						+e.params-text Производитель:
+						+e.params-value Apple
+					+e('li').params-item.table-row
+						+e.params-text Артикул производителя:
+						+e.params-value Z0SC001U4
+					+e('li').params-item.table-row
+						+e.params-text Диагональ дюймов:
+						+e.params-value 27
+					+e('li').params-item.table-row
+						+e.params-text Разрешение:
+						+e.params-value 5120 х 2880
+				+e.more
+					+e('a').delivery(href="") Cегодня
+						+svg('product-card__icon product-card__icon_type_delivery','auto')
+					+e('a').delivery(href="") Завтра
+						+svg('product-card__icon product-card__icon_type_delivery','home')
+					+e('a').more-text(href="") Подробнее
+
+				+e.action.clearfix
+					+e.price
+						+e.price-main 123 740
+						+e('s').price-old 850
+						+e('a').price-text(href="") подробные цены
+					+e.btn
+						+b('a').main-btn.js-modal-btn(data-modal="add",href="") Купить
+						+b('a').main-btn._type_list.js-modal-btn(data-modal="add",href="")
+							+svg('product-card__icon-btn','cart')
+							+e.text Купить

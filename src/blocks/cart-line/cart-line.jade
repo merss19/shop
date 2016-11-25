@@ -1,0 +1,17 @@
+
+include ../svg/svg
+
+mixin cart-line(kind)
+	+b.cart-line.table-row.js-cart__product
+		+e.item_type_pic
+			+e('img').img(src = 'assets/img/content/cart-1.jpg')
+		+e.item_type_product Пылесос для оргтехники АП-2388/ПТ-1100 M (пылесос для тонера, пылесос сервисный 497AB, Пылесос тонерный)
+		+e.item_type_amount
+			+e('input').item-amount(type="text", value="10")
+		+e.item_type_price
+			+e.item-price 133 000
+		if kind !== "drop"
+			+e.item_type_discount  0
+			+e.item_type_total 137 888
+		+e.item_type_delete
+			+svg('cart-line__delete js-cart__delete','delete')

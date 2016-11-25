@@ -1,0 +1,10 @@
+mixin breadcrumb()
+	+b('ul').breadcrumb.clearfix
+		+e('li').item
+				+e('a').link(href = '') Главная
+		+e('li').item
+			+e('a').link(href = '') Компьютеры, Ноутбуки, Планшеты, Моноблоки
+		+e('li').item
+			+e('a').link(href = '') Компьютеры
+		+e('li').item
+			+e('a').link.active(href = '') Компьютеры Apple

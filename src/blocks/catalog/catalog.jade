@@ -1,0 +1,31 @@
+include ../header/header
+include ../breadcrumb/breadcrumb
+include ../filter/filter
+include ../sort-product/sort-product
+include ../product-list/product-list
+include ../pugination/pugination
+include ../sell/sell
+include ../footer/footer
+
+
+mixin catalog()
+	+b('body')
+		+b('section').page.catalog-page__
+			+header()
+			div.container.container_type_main.clearfix
+				+breadcrumb()
+
+				+e('aside').side
+					+filter()
+					+sell()
+
+				+e('section').main
+					+sort-product()
+					+product-list()
+
+				+pugination()
+
+				//+e('section').products-new
+					+block-products(products.new, 'Новинки')
+
+			+footer()

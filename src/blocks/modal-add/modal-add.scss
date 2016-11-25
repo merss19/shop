@@ -1,0 +1,151 @@
+.modal-add{
+	background: #fff;
+	height:507px;
+	width:768px;
+	border-radius:8px;
+	margin: auto;
+	position: relative;
+	display: none;
+	
+
+	&__top{
+		padding:20px 20px 10px;
+		border-bottom:1px solid #ddd;
+	}
+
+	&__list{
+		padding: 27px 22px 0;
+	}
+	
+	&__pic{
+		float: left;
+		width:24%;
+		padding-top:11px;
+	}
+
+	&__img{
+		width: 140px;
+		height: 140px;
+		display: block;
+		margin:0 auto;
+
+	}
+
+	&__close{
+		font-size: 40px;
+		position: absolute;
+		right: 15px;
+		top: -4px;
+		color: #ccc;
+	}
+
+	&__info{
+		float: left;
+		width:76%;
+		margin-top: 3px;
+		padding: 0 12px 0 2px;
+	}
+
+	&__title{
+		font-size:21px;
+		font-family:$futuraBold;
+		padding:5px 0;
+		text-transform: uppercase;
+		letter-spacing: 0.6px;
+	}
+
+	&__product{
+		padding:10px 0;
+		font-size:18px;
+		line-height:22px;
+	}
+
+	&__price{
+		font-size:18px;
+		font-family:$futuraBold;
+		padding: 8px 0;
+	}
+
+	&__action{
+		padding:7px 10px;
+		clear: both;
+	}
+
+	.main-btn{
+		height:48px;
+		line-height:50px;
+		font-size:16px;
+		text-transform: uppercase;
+	}
+
+	&__btn{
+		float: right;
+		width:276px;
+	}
+
+	&__continue{
+		padding:14px 31px;
+		float: right;
+	}
+
+	&__link{
+		font-size:12px;
+		border-bottom:1px dashed $color-main;
+		text-transform: uppercase;
+		color: $color-main;
+	}
+
+	&__content{
+		background: #f2f2f2;
+		padding:10px 22px 37px;
+		margin-top: -13px;
+		border-radius: 0 0 8px 8px;
+	}
+
+	/*.lSSlideOuter{
+		padding-right:80px;
+	}*/
+
+	.product-carousel{
+
+		&__item{
+			height:150px;
+			background: #fff;
+		}
+
+		&__pic{
+			padding-top: 5px;
+			margin-bottom:0;
+		}
+
+		&__nav{
+			right: -12px;
+			top: 47%;
+
+			&_type{
+				&_prev{
+					left: -17px;
+					right: auto;
+
+					.icon__go{
+						transform:rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+
+	.tabs-nav{
+
+
+		&__link{
+			font-size:14px;
+			padding-bottom: 18px;
+
+		}
+	}
+
+
+
+
+}

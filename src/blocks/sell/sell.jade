@@ -1,0 +1,40 @@
+
+
+mixin sell()
+	+b.sell
+		+e.title Отдел продаж
+		+e.list
+			+e.box
+				+e.pic
+					+e('a').wrapper
+						+e('img').img(src = '../assets/img/content/sell.jpg')
+				+e.info
+					+e.item_type_name Шенгелия Зураб Зурабович
+					+e.item_type_job Менеджер по продажам
+					+e.item_type_contacts
+						| Тел.:
+						+e.value +7 (495) 646-10-71
+					+e.item_type_contacts
+						| E-mail:
+						+e.value manager@a19.ru
+					+e.item_type_contacts
+						| Skype:
+						+e.value manager_a19
+			+e.box
+				+e.pic
+					+e('a').wrapper
+						+e('img').img(src = '../assets/img/content/sell.jpg')
+				+e.info
+					+e.item_type_name Шенгелия Зураб Зурабович
+					+e.item_type_job Менеджер по продажам
+					+e.item_type_contacts
+						|Тел.:
+						+e.value +7 (495) 646-10-71
+					+e.item_type_contacts
+						|E-mail:
+						+e.value manager@a19.ru
+					+e.item_type_contacts
+						|Skype:
+						+e.value manager_a19
+		+e.notice
+			|Наши менеджеры всегда готовы Вам помочь, и ответят на все интересующие Вас вопросы.

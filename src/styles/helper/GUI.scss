@@ -1,0 +1,50 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.main-btn{
+	height:42px;
+	line-height:42px;
+	width:100%;
+	display: block;
+	background: $color-main;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	transition: all 0.4s;
+	font-size:12px;
+	font-family:$futuraHeavy;
+	letter-spacing: 1px;
+
+	&:hover{
+		background: $color-main-hover;
+	}
+
+	&_type{
+		&_list{
+			width: 48px;
+			height: 42px;
+			line-height:12px;
+		}
+	}
+	
+}
+
+.btn-add {
+	height: 74px;
+	line-height: 80px;
+	width: 100%;
+	display: block;
+	background: $color-add;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	transition: all 0.4s;
+	font-size: 12px;
+	font-family: $futuraHeavy;
+	letter-spacing: 1px;
+	margin:0 auto;
+
+	&:hover {
+		background: #dcc300;
+	}
+}

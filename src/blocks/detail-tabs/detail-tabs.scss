@@ -1,0 +1,69 @@
+@import 'tabs-main';
+@import 'block-review';
+@import 'block-faq';
+
+.detail-tabs{
+
+	&__content{
+		padding: 10px 0;
+	}
+
+	&__item{
+		&:first-child{
+			padding-top:30px;
+		}
+	}
+
+	&__box{
+		margin-bottom: 21px;
+		display: inline-block;
+		width:49.5%;
+
+		&:nth-child(2n){
+			padding-left:10px;
+		}
+	}
+
+	&__title{
+		font-size:14px;
+		font-family:$openSansBold;
+		padding:5px 0;
+	}
+
+	&__metrics{
+		padding:15px 0;
+		font-size:13px;
+		color: #000;
+		width:100%;
+		table-layout: fixed;
+	}
+
+	&__cell{
+		display: table-cell;
+		width:50%;
+		font-weight:bold;
+		line-height:21px;
+
+		&_type{
+			&_value{
+				color: #696464;
+				font-weight:normal;
+				width: 33%;
+			}
+		}
+	}
+
+	.icon__popular{
+		left: 13px;
+		top: 8px;
+	}
+
+	&__reviews{
+		padding-bottom:40px;
+	}
+
+	&__boxes{
+		border-bottom: 1px solid #ddd;
+	}
+
+}

@@ -1,0 +1,36 @@
+//common
+@import '../../blocks/common/common';
+@import '../../blocks/pugination/pugination';
+
+@import '../../blocks/modal-gallery/modal-gallery';
+@import '../../blocks/modal-add/modal-add';
+
+@import '../../blocks/header/header';
+@import '../../blocks/header-info/header-info';
+@import '../../blocks/header-nav/header-nav';
+@import '../../blocks/cart-box/cart-box';
+@import '../../blocks/block-banner/block-banner';
+@import '../../blocks/block-products/block-products';
+@import '../../blocks/product/product';
+@import '../../blocks/index/index';
+
+
+//catalog
+@import '../../blocks/breadcrumb/breadcrumb';
+@import '../../blocks/catalog/catalog';
+@import '../../blocks/filter/filter';
+@import '../../blocks/sort-product/sort-product';
+@import '../../blocks/product-list/product-list';
+@import '../../blocks/product-card/product-card';
+@import '../../blocks/sell/sell';
+
+//checkout
+@import '../../blocks/cart-line/cart-line';
+@import '../../blocks/cart/cart';
+@import '../../blocks/delivery/delivery';
+@import '../../blocks/contacts-user/contacts-user';
+@import '../../blocks/footer/footer';
+
+//checkout
+@import '../../blocks/detail-card/detail-card';
+@import '../../blocks/detail-tabs/detail-tabs';

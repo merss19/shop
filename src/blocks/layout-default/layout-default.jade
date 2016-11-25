@@ -1,0 +1,28 @@
+
+//include ../scripts/scripts
+include ../../../bemto/bemto
+include ../modal-add/modal-add
+include ../modal-gallery/modal-gallery
+
+doctype html
+html(lang='ru')
+	include ../head/head
+	link(href='assets/css/lightslider.min.css' rel='stylesheet')
+	link(href='assets/css/jquery.bxslider.css' rel='stylesheet')
+	script(src="https://use.typekit.net/ttf1idm.js")
+	script(src="assets/js/typeKit.js")
+
+	block content
+
+	+b.overlay_type_drop
+	+b.overlay_type_modal
+	+b.modal
+	+modal-add()
+	+modal-gallery()
+
+	script(src="assets/js/jquery.min.js")
+	script(src="assets/js/jquery.bxslider.min.js")
+	script(src="assets/js/lightslider.min.js")
+	script(src="assets/js/jquery.autocomplete.min.js")
+	script(src="assets/js/ion.rangeSlider.min.js")
+	script(src="assets/js/main.js")

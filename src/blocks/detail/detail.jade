@@ -1,0 +1,20 @@
+include ../header/header
+include ../breadcrumb/breadcrumb
+include ../detail-card/detail-card
+include ../detail-tabs/detail-tabs
+include ../block-products/block-products
+include ../footer/footer
+
+mixin detail()
+	+b('body')
+		+b('section').page.detail-page__
+			+header()
+			div.container.container_type_main
+				+breadcrumb()
+				+e('section').card
+					+detail-card()
+
+				+e('section').card
+					+detail-tabs()
+
+			+footer()

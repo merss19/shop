@@ -1,0 +1,29 @@
+include ../svg/svg
+mixin header-info()
+	+b.header-info
+		div.container.clearfix
+			+e.menu
+				+e('a').logo(href="index.html")
+					+svg('svg-icon icon__logo','logo33')
+				+e.right
+					+e.list.clearfix
+						+e.item
+							+e('a').link(href="") Акции
+						+e.item
+							+e('a').link(href="") Уценённый товар
+						+e.item
+							+e('a').link(href="") Услуги
+			+e.contacts.clearfix
+				+e.box
+					+svg('svg-icon icon__phone','phone')
+					+e.phone +7 (495) 646-10-71
+					+e.desc
+						+e.desc-more Не смогли дозвониться?
+						+e('button').desc-btn(type="button") Мы вам перезвоним
+				+e.box
+					+svg('svg-icon icon__clock','clock')
+					+e.time с 10:00 до 19:00
+					+e.desc
+						+e.desc-days пн. - пт.
+						+e.desc-location г. Москва, метро Аэропорт
+							+svg('svg-icon icon__location','location')

@@ -1,0 +1,24 @@
+include ../header/header
+include ../block-banner/block-banner
+include ../block-products/block-products
+include ../footer/footer
+
+
+mixin index()
+	+b('body')
+		+b('section').page.main-page__
+			+header()
+			div.container.container_type_main.clearfix
+				+e('section').banner
+					+block-banner(1)
+
+				+e('section').products
+					+block-products(products.best, 'Лучшие на сегодня')
+
+				+e('section').banner
+					+block-banner(2)
+
+				+e('section').products-new
+					+block-products(products.new, 'Новинки')
+
+			+footer()

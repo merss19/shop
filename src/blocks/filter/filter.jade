@@ -1,0 +1,29 @@
+include ../svg/svg
+
+mixin filter()
+	+b.filter
+		+e.box
+			+e.title Цена
+			+e.slider
+				input(type="text" id="price" name="proce" value="")
+		+e.box
+			+e.title Производитель
+			+e('ul').list
+				each item,index in filter.company
+					+e.item
+						+e('input').input(type="checkbox" id="company-#{index}" name="company-#{index}")
+						+e('label').label(for ="company-#{index}")=item
+		+e.box
+			+e.title Диагональ монитора
+			+e('ul').list
+				each item,index in filter.monitor
+					+e.item
+						+e('input').input(type="checkbox" id="monitor-#{index}" name="monitor-#{index}")
+						+e('label').label(for ="monitor-#{index}")=item
+		+e.box
+			+e.title Процессор
+			+e('ul').list
+				each item,index in filter.proc
+					+e.item
+						+e('input').input(type="checkbox" id="proc-#{index}" name="proc-#{index}")
+						+e('label').label(for ="proc-#{index}")=item

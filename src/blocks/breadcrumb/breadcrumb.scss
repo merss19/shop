@@ -1,0 +1,48 @@
+.breadcrumb {
+	padding: 33px 0 17px;
+	margin: 0 -9px;
+
+	&__item {
+		float: left;
+		position: relative;
+		padding: 0 11px;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 6px;
+			right: -1px;
+			width: 6px;
+			height: 6px;
+			border-right: 1px solid #000;
+			border-bottom: 1px solid #000;
+			transform: rotate(-45deg);
+		}
+
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&__link {
+		color: #000;
+		font-size: 12px;
+		text-decoration: underline;
+		display: block;
+
+		&:hover{
+			text-decoration: none;
+			color: #C6C6C6;
+		}
+
+		&.active {
+			text-decoration: none;
+			color: #C6C6C6;
+			cursor: text;
+		}
+	}
+
+}

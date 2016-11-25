@@ -1,0 +1,24 @@
+include ../cart-box/cart-box
+include ../header-info/header-info
+include ../header-nav/header-nav
+include ../svg/svg
+
+mixin header()
+	+b('header').header
+		+e.top.clearfix
+			div.container.clearfix
+				+b.top-links
+					+e.list.clearfix
+						+e.item
+							+e('a').link(href="") О компании
+						+e.item
+							+e('a').link(href="") Доставка и оплата
+						+e.item
+							+e('a').link(href="") Политика возврата
+						+e.item
+							+e('a').link(href="") Контакты
+		+e.middle.clearfix
+			+header-info()
+
+		+e.bottom
+			+header-nav()

@@ -1,0 +1,103 @@
+.footer {
+	padding:7px 0 100px;
+	background: #f2f2f2;
+	font-family:$futuraBook;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	min-height: 735px;
+	width: 100%;
+
+	&__contacts{
+		float: left;
+		width:34%;
+		padding-right: 11px;
+	}
+
+	&__info{
+		 float: left;
+		 width:16.8%;
+	 }
+	&__shop,
+	&__acc{
+		float: left;
+		width: 25.4%;
+	}
+
+	&__acc{
+		//padding-left: 15px;
+		width:23%;
+	}
+
+	&__title{
+		padding:21px 0 10px;
+		font-size:18px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #9a9a9a;
+		font-family:$futuraBook;
+	}
+
+	&__phone{
+		padding:3px 0;
+		font-size:24px;
+		letter-spacing: -0.5px;
+	}
+
+	&__mail{
+		padding:5px 0;
+		font-size:24px;
+		letter-spacing: 0.5px;
+	}
+
+	&__address{
+		padding:16px 0;
+		font-size:13px;
+		line-height:18px;
+		font-family:$openSansReg;
+		letter-spacing: -0.8px;
+		padding-right: 45px;
+	}
+
+	&__social{
+		margin-top:34px;
+	}
+	
+	&__link{
+		color: #969696;
+		text-decoration: underline;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	&__list{
+		padding:8px 0;
+	}
+	&__copyright{
+		margin-top: 170px;
+		padding-left: 5px;
+		font-size:12px;
+	}
+
+}
+.block-social{
+	&__title{
+		text-transform: uppercase;
+		padding:10px 0;
+		font-size:18px;
+		letter-spacing: 1px;
+		color: #9a9a9a;
+		font-family:$futuraBook;
+	}
+	
+	&__list{
+		padding: 10px 0;
+	}
+	
+	&__item{
+		float: left;
+	}
+}
+

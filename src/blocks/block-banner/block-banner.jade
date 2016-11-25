@@ -1,0 +1,11 @@
+
+mixin block-banner(kind)
+	+b.block-banner.clearfix
+		if kind === 1
+			+e.item
+				+e.content
+		else
+			+e.item._type_main
+				+e.content
+			+e.item._type_side
+				+e.content

@@ -1,0 +1,181 @@
+.header-nav{
+	background: $color-main;
+	height:80px;
+	color: #fff;
+	z-index:3;
+	width: 100%;
+
+	.icon__list{
+		z-index:2;
+		top: 31px;
+		left: 77px;
+	}
+
+	.icon__cart{
+		top: 32px;
+		left: 16px;
+	}
+
+	.icon__user{
+		top: 33px;
+		left: 9px;
+	}
+	&__drop{
+		&-menu{
+			position: absolute;
+			top: 80px;
+			left:15px;
+		}
+		&-cart{
+			position: absolute;
+			top: 80px;
+			right: 162px;
+		}
+	}
+
+	&__catalog{
+		float: left;
+		width: 275px;
+		height: 80px;
+		line-height: 54px;
+	}
+
+	&__btn{
+		background: transparent;
+		border: none;
+		margin: auto;
+		padding: 0 0 0 25px;
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		letter-spacing: -0.8px;
+		height:80px;
+		font-family:$futuraHeavy;
+		//transition:all 0.4s;
+		
+		&:hover{
+			background: $color-main-hover;
+		}
+
+		&:before{
+			position: absolute;
+			left: 20px;
+			font-size: 20px;
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 36px;
+			right: 42px;
+			width: 7px;
+			height: 7px;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			transform: rotate(45deg);
+		}
+
+		&.active{
+			background: $color-main-hover;
+
+			&:after{
+				transform: rotate(-135deg);
+				top: 41px;
+			}
+		}
+	}
+
+	&__search{
+		float: left;
+		width: 52.5%;
+		padding: 21px 20px;
+
+	}
+
+	&__input{
+		width: 100%;
+		padding: 10px 15px;
+		border:none;
+		font-size: 14px;
+		letter-spacing: -0.7px;
+	}
+
+	&__user{
+		float: left;
+		width: 23.7%;
+	}
+
+	&__item{
+		float: left;
+		position: relative;
+		width:47.3%;
+		padding: 32px 0 0 25px;
+		height: 80px;
+		text-align: center;
+		cursor: pointer;
+		//transition:all 0.4s;
+
+		&:hover{
+			background: $color-main-hover;
+		}
+
+		&.active{
+			background: $color-main-hover;
+		}
+
+		&-value{
+			display: inline-block;
+			font-family:$futuraHeavy;
+			line-height: 15px;
+		}
+
+		&-text{
+			font-size: 14px;
+			font-family:$futuraHeavy;
+			letter-spacing: -0.5px;
+
+			&:before{
+				position: absolute;
+				top: 2px;
+				left: 0;
+			}
+		}
+
+		&_type{
+			&_profile{
+				width: 52.7%;
+			}
+
+			&_cart{
+				padding: 19px 0 0 11px;
+			}
+
+
+		}
+	}
+
+	&__total{
+		margin-top: -2px;
+		padding-left: 6px;
+		font-family:$openSansReg;
+	}
+
+	&__num{
+		display: inline-block;
+		padding-right: 2px;
+		font-size: 12px;
+	}
+
+	&__auth{
+		text-align: left;
+		padding-left: 3px;
+		margin-top: -1px;
+		font-family:$openSansReg;
+
+		&-result{
+			padding-left: 5px;
+			font-size: 12px;
+		}
+	}
+}

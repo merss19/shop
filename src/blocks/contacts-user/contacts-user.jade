@@ -1,0 +1,34 @@
+mixin contacts-user()
+	+b.delivery
+		+e.title.header-section Контактная информация
+		+e('ul').list.clearfix.js-tabs.tabs-nav__
+			+e('li').item
+				+e('a').link.js-tabs__item.active(data-id= '#individual') Физическое лицо
+			+e('li').item
+				+e('a').link.js-tabs__item(data-id = '#entity') Юридическое Лицо
+			+e('li').item
+				+e('a').link.js-tabs__item(data-id = '#providers') Портал поставщиков
+		+e.content.clearfix.js-tabs__content
+			+e.box.active.js-tabs__box#individual
+				+e.item.form-block__
+					+e.line.clearfix
+						+e.box.col-25
+							+e('label').title(for="surname") Фамилия
+							+e('input').item(type="text",id="surname",placeholder="Иванов")
+						+e.box.col-25
+							+e.title(for="name") Имя
+							+e('input').item(type="text",id="name",placeholder="Иванов")
+						+e.box.col-25
+							+e.title(for="lastname") Отчество
+							+e('input').item(type="text",id="lastname",placeholder="Иванов")
+					+e.line.clearfix
+						+e.box.col-25
+							+e('label').title(for="email") E-mail
+							+e('input').item(type="text",id="mail",placeholder="Иванов")
+							+e.note  По указанному E-mail будет отправлена информация о заказе
+						+e.box.col-25
+							+e.title(for="tel") Телефон
+							+e('input').item(type="tel",id="tel",placeholder="Иванов")
+							+e.note Менеджер свяжется с вами по указанному телефону
+			+e.box.js-tabs__box#entity 2
+			+e.box.js-tabs__box#providers 3

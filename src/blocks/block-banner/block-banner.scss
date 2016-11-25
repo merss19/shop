@@ -1,0 +1,29 @@
+.block-banner{
+	padding:0 0 20px;
+	margin:0 -10px;
+
+	&__item{
+		width:100%;
+		padding:0 10px;
+
+		&_type{
+			&_main{
+				width:75%;
+				float: left;
+			}
+
+			&_side{
+				width:25%;
+				float: left;
+			}
+		}
+	}
+
+	&__content{
+		width:100%;
+		//border: 1px solid #ddd;
+		background: #ddd;
+		height: 275px;
+	}
+
+}

@@ -1,0 +1,15 @@
+
+
+.block-star{
+	float: left;
+	margin: 1px 0 0 48px;
+	
+	.icon__star{
+		display: inline-block;
+		position: static;
+
+		&.active{
+			fill:$color-main;
+		}
+	}
+}

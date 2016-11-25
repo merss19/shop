@@ -1,0 +1,48 @@
+include ../svg/svg
+
+mixin footer()
+	+b('footer').footer
+		div.container.clearfix
+			+e.list.clearfix
+				+e.contacts
+					+e.title Контакты
+					+e.phone +7 (495) 646-10-71
+					+e.mail info@a19.ru
+					+e.address 125167, г. Москва, Ленинградский проспект, дом 47, троение 1, офис 347 (3-й этаж)
+					+e.social.block-social__
+						+e.title Мы в СОЦ. Сетях
+						+e('ul').list.clearfix
+							+e('li').item
+								+e('a').link(href="")
+									//+svg('svg-icon icon__od','od')
+							+e('li').item
+								+e('a').link(href="")
+									//+svg('svg-icon icon__tw','tw')
+							+e('li').item
+								+e('a').link(href="")
+									//+svg('svg-icon icon__tw','go')
+							+e('li').item
+								+e('a').link(href="")
+									//+svg('svg-icon icon__tw','vk')
+							+e('li').item
+								+e('a').link(href="")
+									//+svg('svg-icon icon__tw','in')
+					+e.copyright © 2010—2015, Магазин компьютерной техники «a19».
+				+e.info
+					+e.title Информация
+					+e('ul').list.clearfix
+						each item in footer.info
+							+e('li').item
+								+e('a').link(href="")=item
+				+e.shop
+					+e.title Магазин
+					+e('ul').list.clearfix
+						each item in footer.shop
+							+e('li').item
+								+e('a').link(href="")=item
+				+e.acc
+					+e.title Магазин
+					+e('ul').list.clearfix
+						each item in footer.acc
+							+e('li').item
+								+e('a').link(href="")=item

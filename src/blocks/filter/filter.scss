@@ -1,0 +1,110 @@
+.filter {
+	padding: 7px 10px;
+	border:1px solid #ddd;
+
+	&__title {
+		font-size:12px;
+		font-family:$futuraBold;
+		text-transform: uppercase;
+	}
+
+
+	&__list{
+		padding:15px 0;
+	}
+
+	&__box{
+		padding-bottom:32px;
+
+		&:last-child{
+			padding-bottom: 17px;
+		}
+	}
+
+	&__item{
+		padding:2px 0;
+	}
+
+	&__input{
+		display: none;
+
+		& + label{
+			cursor: pointer;
+			position: relative;
+			padding-left: 29px;
+			color: #8c8a8a;
+			font-size:12px;
+			line-height: 18px;
+
+			&:before{
+				content: "";
+				display: inline-block;
+				height: 19px;
+				width: 19px;
+				border: 1px solid #ddd;
+				position: absolute;
+				top:0;
+				left:0;
+			}
+		}
+
+		&:checked + label{
+			color: #222;
+			font-weight:bold;
+
+			&:before{
+				border: 1px solid rgba(54, 197, 81, 0.73);
+				background: url('../img/check3.png') no-repeat;
+				background-position: 0px  3px;
+				height: 19px;
+				width: 19px;
+			}
+			
+		}
+	}
+
+	&__slider{
+		margin-top:-7px;
+
+		.irs-line{
+			border-radius: 20px;
+			border: 3px solid #07bc28;
+		}
+
+		.irs-bar{
+			background: #07bc28;
+		}
+
+		.irs-slider.to,
+		.irs-slider.from{
+			background: #07bc28;
+			border-radius:14px;
+			border:2px solid #fff;
+			cursor: pointer;
+			width: 17px;
+			height: 17px;
+		}
+
+		.irs-from, .irs-to, .irs-single{
+			top:39px;
+			background: transparent;
+			color: #999999;
+			font-family:$rub;
+			font-size:8px;
+
+			&:after{
+				display: none;
+			}
+		}
+
+		.irs-min,.irs-max{
+			top:39px;
+			background: transparent;
+			color: #999999;
+			font-size:8px;
+		}
+
+	}
+
+
+}

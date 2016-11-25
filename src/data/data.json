@@ -1,0 +1,251 @@
+{
+    "detail":{
+        "options": [
+            {
+                "title":"Основные характеристики",
+                "items":[
+                    {
+                        "option":"Производитель",
+                        "value":"APPLE"
+                    },
+                    {
+                        "option":"Модель",
+                        "value":"Z0SC002QQ"
+                    },
+                    {
+                        "option":"Цвет",
+                        "value":"Комбинированная расцветка"
+                    },
+                    {
+                        "option":"Описание Расцветки",
+                        "value":"Черный, серебристый"
+                    },
+                    {
+                        "option":"Позиционирование",
+                        "value":"Для мультимедийных задач"
+                    },
+                    {
+                        "option":"Операционная Система",
+                        "value":" Mac OS"
+                    }
+
+                ]
+            },
+            {
+                "title":"Процессор",
+                "items":[
+                    {
+                        "option":"Процессор",
+                        "value":"Внешняя"
+                    },
+                    {
+                        "option":"Частота Ггц",
+                        "value":"4"
+                    },
+                    {
+                        "option":"Количество Ядер",
+                        "value":"4"
+                    }
+
+                ]
+            },
+            {
+                "title":"Видео",
+                "items":[
+                    {
+                        "option":"Тип Видео",
+                        "value":"Внешняя"
+                    },
+                    {
+                        "option":"Видео",
+                        "value":"AMD Radeon R9 M395X"
+                    },
+                    {
+                        "option":"Видеопамять Компьютера Мб",
+                        "value":" 4096"
+                    }
+
+                ]
+            },
+          {
+            "title":"Аудио",
+            "items":[
+              {
+                "option":"Встроенные Динамики",
+                "value":"Есть"
+              },
+              {
+                "option":"Встроенный Микрофон",
+                "value":"Есть"
+              }
+
+            ]
+          },
+
+          {
+            "title":"Конфигурация",
+            "items":[
+              {
+                "option":"Оперативная память Мб",
+                "value":"Есть"
+              },
+              {
+                "option":"Тип памяти",
+                "value":"Есть"
+              },
+              {
+                "option":"Оптический привод",
+                "value":"Есть"
+              },
+              {
+                "option":"Объем жесткого диска Гб",
+                "value":"Есть"
+              },
+              {
+                "option":"Объем жесткого диска 2 Гб",
+                "value":"Есть"
+              },
+              {
+                "option":"Объем жесткого диска SSD Гб",
+                "value":"Есть"
+              },
+              {
+                "option":"Объем жесткого диска SSD Гб",
+                "value":"Есть"
+              },
+              {
+                "option":"Интерфейс жесткого диска",
+                "value":"Есть"
+              }
+
+            ]
+          },
+          {
+            "title": "Экран",
+            "items": [
+              {
+                "option": "Диагональ дюймов",
+                "value": "Есть"
+              },
+              {
+                "option": "Разрешение",
+                "value": "Есть"
+              },
+              {
+                "option": "Подсветка",
+                "value": "Есть"
+              },
+              {
+                "option": "Тип памяти",
+                "value": "Есть"
+              },
+              {
+                "option": "Тип памяти",
+                "value": "Есть"
+              }
+            ]
+          }
+
+        ]
+    },
+    "filter":{
+        "company":["Apple","HP","IBM","Lenovo"],
+        "monitor":["27","24","22","19"],
+        "proc":["Intel Core M","Intel Core M"]
+    },
+    "products": {
+        "best": [
+            {
+                "price": "4800",
+                "preview": "assets/img/content/iMac.jpg",
+                "text": "Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4866",
+                "preview": "assets/img/content/imac-2.jpg",
+                "text": "Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4800",
+                "preview": "assets/img/content/imac-3.jpg",
+                "text": "Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4866",
+                "preview": "assets/img/content/imac-4.jpg",
+                "text": "Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            }
+        ],
+        "new": [
+            {
+                "price": "4800",
+                "preview": "assets/img/content/iMac.jpg",
+                "text":"Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4866",
+                "preview": "assets/img/content/iMac.jpg",
+                "text":"Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4800",
+                "preview": "assets/img/content/iMac.jpg",
+                "text":"Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4866",
+                "preview": "assets/img/content/iMac.jpg",
+                "text":"Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4800",
+                "preview": "assets/img/content/iMac.jpg",
+                "text":"Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4866",
+                "preview": "assets/img/content/iMac.jpg",
+                "text":"Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4800",
+                "preview": "assets/img/content/iMac.jpg",
+                "text":"Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            },
+            {
+                "price": "4866",
+                "preview": "assets/img/content/iMac.jpg",
+                "text":"Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB"
+            }
+
+
+        ]
+    },
+    "footer":{
+        "info":[
+            "О компании", "Условия доставки","Политика возврата","Контакты"
+        ],
+        "shop": [
+            "Компьютеры", "Ноутбуки", "Планшеты", "Моноблоки", "Аксессуары",
+            "Серверы и Системы хранения данных", "Селекторы принтеров", "переключатели", "разветвители сигнала",
+            "Портативная электроника",
+            "Периферия", "Офисное оборудование", "UPS",
+            "Расходные материалы",
+            "Комплектующие",
+            "Носители информации",
+            "Сетевое оборудование, модемы, IP - камеры, IP - телефония и Skype",
+            "Системы безопасности и видеонаблюдения",
+            "Системы видеонаблюдения",
+            "Фото, Видео, Телевизоры, Электроника",
+            "Мультимедиа, Аудиотехника, WEB-камеры",
+            "Программное обеспечение",
+            "Клавиатуры, Мыши, Манипуляторы"
+        ],
+        "acc":[
+            "Аксессуары",
+            "Электротехнические изделия",
+            "Бытовая техника, Инструменты"
+        ]
+  }
+
+}

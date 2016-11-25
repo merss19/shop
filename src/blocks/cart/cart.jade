@@ -1,0 +1,52 @@
+include ../delivery/delivery
+include ../cart-line/cart-line
+include ../contacts-user/contacts-user
+
+mixin cart()
+	+b.cart
+		+e.header Оформление заказа
+		+e.item
+			+e.title Корзина товаров
+			+e.list.table.js-cart__table
+				+e.head.table-row
+					+e.head-item
+					+e.head-item
+					+e.head-item Кол-во
+					+e.head-item Цена
+					+e.head-item Скидка
+					+e.head-item Итого
+				+cart-line()
+				+cart-line()
+			+e.total
+				|Стоимость:
+				+e.total-sum 141 220
+			+e.empty.js-empty Нет товаров
+		+e.item
+			+delivery()
+		+e.item
+			+contacts-user()
+		+e.item_type_promo
+			+e.title.header-section Промо код
+			+b.form-block
+				+e.line
+					+e.box.col-25
+						+e('label').title(for="code") Промо код
+						+e('input').item(type="text",id="code")
+						+e.note Введите промокод для получения скидки
+		+e.bottom.clearfix
+			+e.result
+				+e.table.table
+					+e.result-item.table-row
+						+e.cell_type_value Стоимость:
+						+e.cell 141 220
+					+e.result-item.table-row
+						+e.cell_type_value Доставка:
+						+e.cell 500
+					+e.result-item.table-row
+						+e.cell_type_value Скидка:
+						+e.cell 0
+				+e.all
+					|Итого:
+					+e.all-sum 141 720
+		+e.btn
+			+b('a').btn-add(href="") оформить

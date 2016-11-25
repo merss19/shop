@@ -1,0 +1,149 @@
+.header-info{
+	height:82px;
+	padding:2.5px 0;
+
+	&__logo{
+		display: block;
+	}
+
+	&__contacts{
+		float: right;
+		margin:0 -30px;
+		padding-top: 3px;
+	}
+
+	&__menu{
+		float: left;
+		position: relative;
+		width:55%;
+		height:80px;
+	}
+
+	&__right{
+		display: inline-block;
+		position: absolute;
+		bottom: 10px;
+		right: 19px;
+		letter-spacing: 1px;
+	}
+
+	&__item{
+		float: left;
+		padding:0 13px;
+	}
+
+	&__link{
+		color: $color-main;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-family:$futuraDemi;
+		letter-spacing:-0.1px;
+
+		&:hover{
+			text-decoration: underline;
+		}
+
+		&:active{
+			text-decoration: underline;
+			color: $color-main-hover;
+		}
+	}
+
+	.icon__logo{
+		top: 2px;
+		left: 2px;
+	}
+
+	.icon__phone{
+		left: -53px;
+		top: 2px;
+	}
+
+	.icon__clock{
+		left: 6px;
+		top: 2px;
+	}
+
+	.icon__location{
+		left: -20px;
+		top: 4px;
+	}
+
+	&__box{
+		float: left;
+		padding: 4px 32px 0 60px;
+		position: relative;
+		color: $color-main;
+
+		&:first-child{
+			padding: 2px 59px 0 0;
+		}
+
+		&:before{
+			position: absolute;
+			top: 6px;
+			left: 15px;
+			font-size: 40px;
+		}
+	}
+
+	&__phone{
+		font-size:22px;
+		font-family:$futuraBook;
+		letter-spacing: -0.5px;
+	}
+
+	&__time{
+		font-size: 18px;
+		font-family:$futuraBook;
+	}
+
+	&__desc{
+
+		&-more{
+			color: #b4b4b4;
+			padding: 7px 0 0 3px;
+			font-size: 11px;
+		}
+
+		&-btn{
+			background: transparent;
+			border: none;
+			border-bottom: 1px dashed  $color-main;
+			padding:0;
+			font-size: 11px;
+			display: block;
+			margin: -1px 0 0 3px;
+
+			&:hover{
+				border-bottom: 1px solid  $color-main;
+			}
+
+			&:active{
+				border-bottom: 1px solid  $color-main;
+				color: $color-main-hover;
+			}
+
+
+		}
+
+		&-days{
+			font-size: 16px;
+			text-transform: uppercase;
+			font-family:$futuraBook;
+		}
+
+		&-location{
+			font-size: 10px;
+			padding-top: 4px;
+			position: relative;
+
+			&:before{
+				position: absolute;
+				top: 10px;
+				left: -10px;
+			}
+		}
+	}
+
+}

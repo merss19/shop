@@ -1,0 +1,102 @@
+.sort-product {
+
+	&__header {
+		font-size:36px;
+		padding: 3px 0;
+		font-family:$futuraBold;
+	}
+	&__filter{
+		padding: 14px 0;
+		font-size:12px;
+	}
+
+	&__kind {
+		float: left;
+	}
+
+	&__text {
+		float: left;
+	}
+
+	&__icon{
+		fill:#ddd;
+		position: absolute;
+
+		&_type{
+			&_price{
+				width: 8px;
+				height: 8px;
+				top: 7px;
+				right: 8px;
+			}
+
+			&_view{
+				width:20px;
+				height:16px;
+				position: static;
+
+				&.active{
+					fill:$color-main;
+				}
+			}
+		}
+	}
+
+	&__items{
+		float: left;
+	}
+
+	&__item{
+		display: inline-block;
+		position: relative;
+		padding: 0 22px;
+		color: #afadad;
+		text-decoration: underline;
+
+		&.active{
+			color: $color-main;
+		}
+	}
+
+	&__view{
+		float: right;
+	}
+
+	&__btns{
+		float: right;
+		margin-left: 16px;
+	}
+
+	&__btn{
+		display: inline-block;
+		padding-left:3px;
+		cursor: pointer;
+
+		&.active{
+			cursor: default;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

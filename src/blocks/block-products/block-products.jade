@@ -1,0 +1,11 @@
+include ../product/product
+
+mixin block-products(type, title)
+	-var list = 'products.' + type
+	+b.block-products
+		+e.title #{ title }
+		+e.content
+			+e('ul').list.clearfix
+				each item in type
+					+e('li').item
+						+product(item)

@@ -1,0 +1,174 @@
+// Var for using custom font
+$openSansReg: 'openSansReg', Helvetica, Arial, sans-serif;
+$openSansBold: 'openSansBold', Helvetica, Arial, sans-serif;
+$futuraDemi: 'futuraDemi', Helvetica, Arial, sans-serif;
+$futuraHeavy: 'futuraHeavy', Helvetica, Arial, sans-serif;
+$futuraBook: 'futuraBook', Helvetica, Arial, sans-serif;
+$futuraBold: 'futuraBold', Helvetica, Arial, sans-serif;
+$rub: 'rub', Helvetica, Arial, sans-serif;
+
+@font-face {
+  font-family: 'rub';
+  src: url('../fonts/rub/rouble-webfont.eot');
+  src: url('../fonts/rub/rouble-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rub/rouble-webfont.woff') format('woff'),
+  url('../fonts/rub/rouble-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'openSansReg';
+  src: url('../fonts/OpenSansRegular/OpenSansRegular.eot');
+  src: url('../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSansRegular/OpenSansRegular.woff') format('woff');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+@font-face {
+  font-family: 'openSansBold';
+  src: url('../fonts/OpenSansBold/OpenSansBold.eot');
+  src: url('../fonts/OpenSansBold/OpenSansBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSansBold/OpenSansBold.woff') format('woff');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+@font-face {
+  font-family: 'futuraBold';
+  src: url('../fonts/futura/Bold/FuturaPTBold.eot'),
+  url('../fonts/futura/Bold/FuturaPTBold.woff') format('woff'),
+  url("../fonts/futura/Bold/FuturaPTBold.ttf") format("truetype"),
+  url('../fonts/futura/Bold/FuturaPTBold.svg#custom_font') format('svg');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+
+@font-face {
+  font-family: 'futuraDemi';
+  src: url('../fonts/futura/Demi/FuturaPT-Demi.eot'),
+  url('../fonts/futura/Demi/FuturaPT-Demi.woff') format('woff'),
+  url("../fonts/futura/Demi/FuturaPT-Demi.ttf") format("truetype"),
+  url('../fonts/futura/Demi/FuturaPT-Demi.svg#custom_font') format('svg');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+
+@font-face {
+  font-family: 'futuraHeavy';
+  src: url('../fonts/futura/Heavy/FuturaPT-Heavy.eot'),
+  url('../fonts/futura/Heavy/FuturaPT-Heavy.woff') format('woff'),
+  url("../fonts/futura/Heavy/FuturaPT-Heavy.ttf") format("truetype"),
+  url('../fonts/futura/Heavy/FuturaPT-Heavy.svg#custom_font') format('svg');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+@font-face {
+  font-family: 'futuraBook';
+  src: url('../fonts/futura/Book/FuturaPTBook.eot'),
+  url('../fonts/futura/Book/FuturaPTBook.woff') format('woff'),
+  url("../fonts/futura/Book/FuturaPTBook.ttf") format("truetype"),
+  url('../fonts/futura/Book/FuturaPTBook.svg#custom_font') format('svg');
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?ni08gy');
+  src:  url('../fonts/icomoon/icomoon.eot?ni08gy#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon/icomoon.ttf?ni08gy') format('truetype'),
+  url('../fonts/icomoon/icomoon.woff?ni08gy') format('woff'),
+  url('../fonts/icomoon/icomoon.svg?ni08gy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rub {
+	font-family: $rub;
+	text-transform: none;
+	font-weight:bold;
+}
+//буквы для рубля
+/*a — Arial Regular
+b — Arial Italic
+c — Arial Bold
+d — Arial Bold Italic
+e — Georgia Regular
+f — Georgia Italic
+g — Georgia Bold
+h — Georgia Bold Italic
+i — Tahoma Regular
+j — Tahoma Bold
+k — Times Regular
+l — Times Italic
+m — Times Bold
+n — Times BoldItalic
+o — Lucida Sans
+p — Lucida Sans Bold
+q — Verdana Regular
+r — Verdana Italic
+s — Verdana Bold
+t — Verdana Bold Italic
+u — Futura
+v — Trump Mediaeval
+w — ITC Studio Script*/
+
+
+.icon-logo .path1:before {
+  content: "\e90e";
+  color: rgb(66, 171, 52);
+}
+.icon-logo .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-logo .path3:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(72, 174, 77);
+}
+.icon-arrow-down:before {
+  content: "\e905";
+}
+.icon-auto:before {
+  content: "\e906";
+}
+.icon-list:before {
+  content: "\e909";
+}
+.icon-percent:before {
+  content: "\e90b";
+}
+.icon-user:before {
+  content: "\e904";
+}
+.icon-cart:before {
+  content: "\e900";
+}
+.icon-clock:before {
+  content: "\e901";
+}
+.icon-location:before {
+  content: "\e902";
+}
+.icon-phone:before {
+  content: "\e903";
+}
+

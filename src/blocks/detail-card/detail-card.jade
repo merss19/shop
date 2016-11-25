@@ -1,0 +1,105 @@
+include ../svg/svg
+
+mixin detail-card()
+	+b.detail-card
+		+e.header Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB
+		+e.product.clearfix
+			+e.gallery.clearfix.block-gallery__
+				+e.side
+					+e.item
+						+e('img').img(src = 'assets/img/content/detail.jpg')
+					+e.item
+						+e('img').img(src = 'assets/img/content/imac-4.jpg')
+				+e.main
+					+e('img').main-img(src = 'assets/img/content/detail.jpg')
+					+e('button').increase.js-modal-btn(data-modal="gallery")
+						+svg('svg-icon icon__loop','loop')
+						+e Увеличить
+				+e.metrics.clearfix
+					+e.icon
+						+svg('svg-icon icon__size','size')
+						+e.icon-text 1000х1200х80 мм.
+						+e.icon-desc размеры
+					+e.icon
+						+svg('svg-icon icon__weght','weght')
+						+e.icon-text 35 кг.
+						+e.icon-desc вес
+			+e.info.detail-view__
+				+e.top.clearfix
+					+e.code.block-code__
+						+e.text код товара:
+						+e.num 219-926
+						+e.wish
+							+svg('svg-icon icon__wish','wish')
+					+e.star.block-star__
+						+svg('svg-icon icon__star active','star')
+						+svg('svg-icon icon__star active','star')
+						+svg('svg-icon icon__star active','star')
+						+svg('svg-icon icon__star active','star')
+						+svg('svg-icon icon__star ','star')
+				+e.options.clearfix
+					+e.box_type_delivery
+						+e.item
+							+svg('svg-icon icon__stock','stock')
+							+e.item-text Есть на складе
+							+e.item-desc
+						+e.item
+							+svg('svg-icon icon__delivery','delivery')
+							+e.item-text Сможем доставить сегодня
+							+e.item-desc Стоимость доставки по Москве: 500
+						+e.item
+							+svg('svg-icon icon__home','home')
+							+e.item-text Можно забрать из офиса сегодня
+							+e.item-desc Это бесплатно
+					+e.box_type_garant
+						+e.item
+							+svg('svg-icon icon__garant','garant')
+							+e.garant-text 1 Год
+							+e.garant-desc гарантия
+					+e.box_type_price
+						+e.price 138 710
+						+e('a').note(href="") Уведомить об изменении цены
+						+e.option
+							|Юридические лица:
+							+e.option-price 142 871.30
+						+e.option
+							| Портал поставщиков:
+							+e.option-price 142 871.30
+						+e.btn.js-modal-btn(data-modal="add")
+							+b('a').main-btn(href="#") Купить
+				+e.bottom
+					+e.title С этим товаром покупают
+					+e.carousel.product-carousel__
+						+e.list.clearfix.js-gallery
+							+e.item
+								+e.pic
+									+e('img').img(src = 'assets/img/content/mouse.jpg')
+								+e.product Apple Magic Mouse White Bluetooth
+									+e.price 6 060 c
+							+e.item
+								+e.pic
+									+e('img').img(src = 'assets/img/content/mouse.jpg')
+								+e.product Apple Magic Mouse White Bluetooth
+									+e.price 6 060 c
+							+e.item
+								+e.pic
+									+e('img').img(src = 'assets/img/content/mouse2.jpg')
+								+e.product Apple Magic Mouse White Bluetooth
+									+e.price 6 060 c
+							+e.item
+								+e.pic
+									+e('img').img(src = 'assets/img/content/mouse.jpg')
+								+e.product Apple Magic Mouse White Bluetooth
+									+e.price 6 060 c
+							+e.item
+								+e.pic
+									+e('img').img(src = 'assets/img/content/mouse.jpg')
+								+e.product Apple Magic Mouse White Bluetooth
+									+e.price 6 060 c
+							+e.item
+								+e.pic
+									+e('img').img(src = 'assets/img/content/mouse.jpg')
+								+e.product Apple Magic Mouse White Bluetooth
+									+e.price 6 060 c
+						+e.nav.js-next
+							+svg('svg-icon icon__go ','go')

@@ -1,0 +1,202 @@
+
+.detail-view{
+	padding-left: 5px;
+
+	&__top{
+		padding-top: 10px;
+	}
+
+	&__stock{
+		float: right;
+		position: relative;
+		font-size:11px;
+		color: #aba9a9;
+	}
+
+	&__code{
+		position: relative;
+		display: inline-block;
+		float: left;
+		
+		&-text{
+			font-size:12px;
+			display: inline-block;
+		}
+
+		&-num{
+			display: inline-block;
+			font-size:14px;
+			color: $color-main;
+			font-family:$futuraDemi;
+		}
+	}
+
+	&__wish{
+		float: right;
+		position: relative;
+	}
+
+	&__icon{
+		fill:#ddd;
+		width:18px;
+		height:16px;
+		position: absolute;
+
+		&-btn{
+			fill:#fff;
+			margin-top:8px;
+			width:18px;
+			height:16px;
+		}
+
+		&_type{
+			&_wish{
+				top: -17px;
+				right: -34px;
+			}
+
+			&_stock{
+				left: -32px;
+				top: -3px;
+				width: 20px;
+				height: 20px;
+				fill:#aba9a9;
+			}
+
+			&_delivery{
+				left: -24px;
+				top: 0px;
+			}
+		}
+	}
+
+	&__box{
+		&_type{
+			&_delivery{
+				width:44%;
+				padding-left: 51px;
+				float: left;
+				padding-top: 20px;
+			}
+
+			&_garant{
+				width:15%;
+				float: left;
+				padding-top: 20px;
+			}
+
+			&_price{
+				width:41%;
+				float: left;
+				text-align: right;
+			}
+		}
+	}
+
+	&__options{
+		border-bottom:1px solid #eee;
+	}
+	
+	&__item{
+		position: relative;
+		padding-bottom: 26px;
+
+		&-text{
+			font-size:12px;
+			line-height: 17px;
+		}
+		
+		&-desc{
+			font-size:12px;
+			color:#c1bbbb;
+		}
+	}
+
+	&__garant{
+		&-text{
+			padding-left: 31px;
+			font-size: 12px;
+		}
+
+		&-desc{
+			font-size: 8px;
+			padding-left: 31px;
+			margin-top: -2px;
+		}
+	}
+
+	&__price{
+		font-size:36px;
+		font-family:$openSansBold;
+		line-height: 41px;
+	}
+
+
+	&__note{
+		font-size:12px;
+		font-family:$futuraBook;
+		color: #ccc9c9;
+		display: inline-block;
+		border-bottom:1px dotted #ddd;
+		position: relative;
+		top: -8px;
+
+		&:hover{
+			border-bottom:1px solid #ddd;
+		}
+	}
+
+	&__option{
+		font-size:12px;
+		color: #ccc9c9;;
+		
+		&-price{
+			font-size:14px;
+			color: #000;
+			display: inline-block;
+			font-weight: bold;
+		}
+
+	}
+
+	&__btn{
+		padding: 22px 0 14px;
+	}
+
+	&__bottom{
+		padding:10px 0;
+	}
+
+	&__title{
+		font-size:12px;
+		font-family:$openSansBold;
+/*		font-family:"Co Text";
+		font-family:"Futura PT";*/
+		text-transform: uppercase;
+	}
+
+	.icon__delivery{
+		left: -52px;
+		top: 3px;
+	}
+
+	.icon__home{
+		left: -40px;
+	}
+
+	.icon__stock{
+		left: -40px;
+		top: -2px;
+		width:26px;
+		height:28px;
+	}
+
+	.main-btn{
+		height:50px;
+		line-height:54px;
+		font-size:16px;
+	}
+
+
+}
+

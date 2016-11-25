@@ -1,0 +1,30 @@
+include ../svg/svg
+
+mixin product(product)
+	+b.product
+		+e('a').pic(href="detail.html")
+			+e('img').img(src = '#{ product.preview }')
+			//+e.sticker._type_new
+				+e.sticker-value новинка
+		+e.desc
+			+e('a').desc-link(href="") #{ product.text }
+		+e.code
+			| код товара:
+			+e.code-value 219-926
+		+e.bottom.clearfix
+			+e.special.clearfix
+				+e.special-icon
+					+svg('svg-icon icon__percent','percent')
+				+e.special-delivery
+					+e.special-icon
+						+svg('svg-icon icon__auto','auto')
+					+e.special-desc доставим сегодня
+			+e.price
+				+e.price-main
+					|#{ product.price }
+					+b('span').rub o
+				+e.price-old
+					|cтарая цена:
+					+e('s')
+						|#{ product.price }
+						+b('span').rub o

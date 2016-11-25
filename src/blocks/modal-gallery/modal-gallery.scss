@@ -1,0 +1,74 @@
+.modal-gallery{
+	background: #fff;
+	height:690px;
+	width:770px;
+	border-radius:8px;
+	padding:20px 30px;
+	margin: auto;
+	position: relative;
+	display: none;
+
+	&__item{
+		//width:200px;
+		text-align: center;
+		padding-top:15px;
+		width:730px;
+	}
+
+	&__img{
+		width: 570px;
+		height: 540px;
+		display: block;
+		margin:0 auto;
+
+	}
+
+	&__close{
+		font-size: 40px;
+		position: absolute;
+		right: 15px;
+		top: -4px;
+		color: #ccc;
+	}
+
+	.lSGallery{
+		position: absolute;
+		bottom: 31px;
+		left: 32px;
+		margin: auto;
+
+		a{
+			display: block;
+		}
+
+		img{
+			width: 60px;
+			height: 60px;
+			display: block;
+		}
+	}
+
+	.lightSlider{
+		overflow:visible
+	}
+
+	.lSSlideOuter{
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 13px;
+	}
+
+	&__thumb{
+
+		&-item{
+			float: left;
+			display: block;
+		}
+
+		&-img{
+			width:80px;
+			height:60px;
+		}
+	}
+
+
+}

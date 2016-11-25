@@ -1,0 +1,48 @@
+mixin delivery()
+	+b.delivery
+		+e.title.header-section Доставка
+		+e('ul').list.clearfix.js-tabs.tabs-nav__
+			+e('li').item
+				+e('a').link.js-tabs__item.active(data-id= '#courier') Доставка курьером
+			+e('li').item
+				+e('a').link.js-tabs__item(data-id = '#pickup') Самовывоз
+			+e('li').item
+				+e('a').link.js-tabs__item(data-id = '#company') Транспортная компания
+		+e.content.js-tabs__content
+			+e.box.js-tabs__box.active.clearfix#courier
+				+e.item.col-52.form-block__
+					+e.line.clearfix
+						+e.box.col-50
+							+e('label').title Ближайшая станция метро
+							+e('select').item
+								+b('option') Боровицкая
+								+b('option') Курская
+					+e.line
+						+e.box
+							+e('label').title Улица
+							+e('input').item
+					+e.line.clearfix
+						+e.box.col-25
+							+e('label').title Дом / Корпус
+							+e('input').item
+						+e.box.col-25
+							+e('label').title Квартира
+							+e('input').item
+						+e.box.col-25
+							+e('label').title Подъезд
+							+e('input').item
+						+e.box.col-25
+							+e('label').title Этаж
+							+e('input').item
+				+e.item.col-48
+					+e.desc
+						+e.desc-title Условия доставки
+						+e('p') Доставка товара осуществляется строго по указанному адресу покупателем.Доставка товара до квартиры (офиса) осуществляется, если вес и объем не превышают возможность транспортировки одним человеком за один раз.
+						+e('p') Оплата товара производится исключительно только в рублях РФ.Проверка и последующая оплата товара заказанного покупателем с доставкой, производится строго в помещении (офис, квартира, № гостиницы).
+						+e('p') Курьер, водитель, экспедитор не уполномочен давать консультации по техническим параметрам поставляемого товара.
+						+e('p') В случае доставки товара на территорию с платным въездом, оплата за въезд осуществляется за счет покупателя. В противном случае, доставка осуществляется до места платного въезда.
+				+e.total
+					|Стоимость доставки:
+					+e.total-sum  500
+			+e.box.js-tabs__box#pickup 2
+			+e.box.js-tabs__box#company 3

@@ -1,0 +1,19 @@
+mixin pugination()
+	+b.pugination.clearfix
+		+e('ul').list.clearfix
+			+e('li').item
+				+e('a').link_type_nav.disabled(href = '') <назад
+			+e('li').item
+					+e('a').link.active(href = '') 1
+			+e('li').item
+				+e('a').link(href = '') 2
+			+e('li').item
+				+e('a').link(href = '') 3
+			+e('li').item
+				+e('a').link(href = '') 4
+			+e('li').item
+				+e('a').link(href = '') ...
+			+e('li').item
+				+e('a').link(href = '') 996
+			+e('li').item
+				+e('a').link_type_nav(href = '') вперед>

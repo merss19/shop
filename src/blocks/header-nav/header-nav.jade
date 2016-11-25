@@ -1,0 +1,57 @@
+include ../svg/svg
+
+mixin header-nav()
+	+b.header-nav
+		div.container.clearfix
+			+e.catalog.js-drop__root
+				+svg('svg-icon icon__list','list')
+				+e('button').btn.js-drop__btn(type="button") Каталог товаров
+				+e.drop-menu.js-drop__list.catalog-menu__
+					+e('ul').list.clearfix
+						+e('li').item
+							+e('a').link(href="catalog.html") Компьютеры, ноутбуки, планшеты
+							+e('ul').list_type_child
+								+e('li').item
+									+e('a').link(href="") Серверы и системы зхранения данных
+									+e('ul').list_type_child
+										+e('li').item
+											+e('a').link(href="") Переферия офисное оборудование
+										+e('li').item
+											+e('a').link(href="") Переферия офисное оборудование
+								+e('li').item
+									+e('a').link(href="") Серверы и системы зхранения данных
+									+e('ul').list_type_child
+										+e('li').item
+											+e('a').link(href="") Портативная электроника
+										+e('li').item
+											+e('a').link(href="") Портативная электроника
+								+e('li').item
+									+e('a').link(href="") Серверы и системы зхранения данных
+						+e('li').item
+							+e('a').link(href="") Компьютеры, ноутбуки, планшеты
+							+e('ul').list_type_child
+								+e('li').item
+									+e('a').link(href="") Портативная электроника
+								+e('li').item
+									+e('a').link(href="") Портативная электроника
+								+e('li').item
+									+e('a').link(href="") Портативная электроника
+						+e('li').item
+							+e('a').link(href="") Компьютеры, ноутбуки, планшеты
+			+e.search
+				+e('input').input(placeholder="Поиск товаров").js-autocomplete
+			+e.user.js-drop__root
+				+e('button').item._type_cart.js-drop__btn
+					+e.item-text
+						+svg('svg-icon icon__cart','cart')
+						+e.item-value Корзина
+						+e.total
+							+e.num 2389
+							| руб.
+				+e.drop-cart.js-drop__list
+					+cart-box()
+				+e.item._type_profile
+					+e.item-text Личный кабинет
+						+svg('svg-icon icon__user','user')
+						+e.auth
+							+e.auth-result не вошли

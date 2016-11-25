@@ -1,0 +1,28 @@
+@import 'block-gallery';
+@import 'detail-view';
+@import 'product-carousel';
+
+.detail-card {
+	margin-bottom:50px;
+
+	&__product{
+		padding: 17px 0;
+	}
+
+	&__header {
+		font-size: 30px;
+		padding: 10px 0;
+		font-family:$futuraBold;
+	}
+
+	&__gallery {
+		float: left;
+		width: 42%;
+	}
+
+	&__info {
+		float: left;
+		width: 58%;
+	}
+}
+
