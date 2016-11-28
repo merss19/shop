@@ -119,15 +119,15 @@
 		}
 
 		&__nav{
-			right: -12px;
-			top: 47%;
+		/*	right: -12px;
+			top: 47%;*/
 
 			&_type{
 				&_prev{
 					left: -17px;
 					right: auto;
 
-					.icon__go{
+					.icon__nav{
 						transform:rotate(180deg);
 					}
 				}

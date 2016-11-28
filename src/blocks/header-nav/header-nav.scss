@@ -2,7 +2,7 @@
 	background: $color-main;
 	height:80px;
 	color: #fff;
-	z-index:3;
+	z-index:4;
 	width: 100%;
 
 	.icon__list{
@@ -28,8 +28,8 @@
 		}
 		&-cart{
 			position: absolute;
-			top: 32px;
-			left: 14px;
+			top: 80px;
+			right: 160px;
 		}
 	}
 
@@ -89,7 +89,33 @@
 		float: left;
 		width: 52.7%;
 		padding: 20px 21px;
+		position: relative;
 
+	}
+	
+	&__autocomplete{
+		position: relative;
+		width: 100%;
+		background: #fff;
+
+		.autocomplete-suggestions{
+			background: #fff;
+			color: #929292;
+			width: 100%;
+			border-top: 1px solid #ddd;
+		}
+
+		.autocomplete-suggestion{
+			padding: 12px 10px;
+			font-size: 12px;
+			cursor: pointer;
+			transition:all 0.4s;
+			
+			&:hover{
+				background: #cef3d4;
+				color: #000;
+			}
+		}
 	}
 
 	&__input{
@@ -97,6 +123,7 @@
 		padding: 10px 15px;
 		border:none;
 		font-size: 14px;
+		color: #000;
 	}
 
 	&__user{

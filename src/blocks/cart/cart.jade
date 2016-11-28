@@ -20,7 +20,9 @@ mixin cart()
 					+cart-line()
 				+e.total
 					|Стоимость:
-					+e.total-sum 141 220
+					+e('span')
+						|141 220
+						+b('span').rub o
 			+e.empty.js-empty Нет товаров
 		+e.item
 			+delivery()
@@ -39,15 +41,21 @@ mixin cart()
 				+e.table.table
 					+e.result-item.table-row
 						+e.cell_type_value Стоимость:
-						+e.cell 141 220
+						+e.cell
+							|141 220
+							+b('span').rub o
 					+e.result-item.table-row
 						+e.cell_type_value Доставка:
-						+e.cell 500
+						+e.cell
+							|500
+							+b('span').rub o
 					+e.result-item.table-row
 						+e.cell_type_value Скидка:
 						+e.cell 0
 				+e.all
 					|Итого:
-					+e.all-sum 141 720
+					+e('span').sum
+						|141 720
+						+b('span').rub o
 		+e.btn
 			+b('a').btn-add(href="") оформить

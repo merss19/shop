@@ -1,0 +1,25 @@
+include ../header/header
+include ../breadcrumb/breadcrumb
+
+include ../sell/sell
+include ../menu-side/menu-side
+include ../company/company
+include ../footer/footer
+
+
+mixin aboute()
+	+b('body')
+		+b('section').page.content__
+			+header()
+			div.container.container_type_main.clearfix
+				+breadcrumb()
+
+				+e('aside').side
+					+menu-side()
+					+menu-side()
+					+sell()
+
+				+e('section').main
+					+company()
+
+			+footer()

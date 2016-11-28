@@ -9,7 +9,7 @@ import modal from './modal'
 import tabs from './tabs'
 
 
-drop.init()
+//drop.init()
 
 $(() => {
     svg4everybody();
@@ -17,7 +17,7 @@ $(() => {
 
 
 
-//$('.js-drop__btn').drop()
+$('.js-drop__btn').drop()
 
 $('.js-tabs').tabs()
 
@@ -108,48 +108,72 @@ let gall = gallery.lightSlider({
     });
 
 
-/*
-
-let bt = $('.js-drop__btn')
-console.log('btns');
-console.log(bt);
-for(let i = 0; i < bt.length; i++){
-    $(bt[i]).on('click', toggle)
-}
-
-        function toggle(e){
-
-        console.log('toggle')
-        console.log(this)
-
-        let list = $(e.target).closest('.js-drop__root').find('.js-drop__list'),
-            active = $(e.target).hasClass('active'),
-            overlay = $('.overlay_type_drop')
 
 
 
-        if(!active){
-            console.log('in')
-            $(e.target).addClass('active')
-            overlay.stop().fadeIn()
 
-            list.stop().fadeIn()
+var countries = [
+    { value: 'MicroLab M4741'},
+    { value: 'MicroLab M4741'},
+    { value: 'MicroLab M4741'},
+    { value: 'MicroLab M4741'},
+    { value: 'MicroLab M4741'},
+    { value: 'MicroLab M4741'}
+];
 
-            //$(document).on('click', drop.close)
+$('.js-autocomplete').autocomplete({
+    lookup: countries,
+    appendTo:'.header-nav__autocomplete',
+    onSearchComplete:function(){
+        let parent = $(this).parent(),
+            container = parent.find('.header-nav__autocomplete'),
+            autocomplete = parent.find('.autocomplete-suggestions'),
+            containerWidth = container.width()
 
-        }
+        autocomplete.width(containerWidth)
+    }
 
-        if(active){
-            console.log('out')
-            overlay.stop().fadeOut()
-            $(e.target).removeClass('active')
-            list.stop().fadeOut()
-            $(document).off('click', drop.close)
+});
 
-        }
+
+//toTop
+
+let toTop = $('.toTop'),
+    $htmlBody = $("html, body"),
+    delay = 1000
+
+    toTop.on('click',function () {
+        $htmlBody.animate({
+            scrollTop: 0
+        }, delay);
+    })
+
+$('.js-select-metro').selectize();
+
+/*$(window).on('scroll', function (){
+    var scrollTop = $(window).scrollTop(),
+        footerTop = $('footer').offset().top,
+        wh = $(window).height();
+
+
+    if((footerTop-60-wh) < scrollTop){
+
+        toTop.fadeIn();
 
     }
-*/
+
+    if(wh > scrollTop){
+        toTop.fadeOut();
+    }
+
+
+});
+
+toTop.on('click',function () {
+    $htmlBody.animate({
+        scrollTop: 0
+    }, delay);
+});*/
 
 
 

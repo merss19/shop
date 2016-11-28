@@ -29,8 +29,9 @@ mixin detail-card()
 					+e.code.block-code__
 						+e.text код товара:
 						+e.num 219-926
-						+e.wish
+						+e.wish.js-wish
 							+svg('svg-icon icon__wish','wish')
+							+svg('svg-icon icon__wish-fill','wish-color')
 					+e.star.block-star__
 						+svg('svg-icon icon__star active','star')
 						+svg('svg-icon icon__star active','star')
@@ -46,7 +47,10 @@ mixin detail-card()
 						+e.item
 							+svg('svg-icon icon__delivery','delivery')
 							+e.item-text Сможем доставить сегодня
-							+e.item-desc Стоимость доставки по Москве: 500
+							+e.item-desc Стоимость доставки по Москве:
+								+e('span').item-price
+									|500
+									+b('span').rub o
 						+e.item
 							+svg('svg-icon icon__home','home')
 							+e.item-text Можно забрать из офиса сегодня
@@ -57,14 +61,20 @@ mixin detail-card()
 							+e.garant-text 1 Год
 							+e.garant-desc гарантия
 					+e.box_type_price
-						+e.price 138 710
+						+e.price
+							|138 710
+							+b('span').rub o
 						+e('a').note(href="") Уведомить об изменении цены
 						+e.option
 							|Юридические лица:
-							+e.option-price 142 871.30
+							+e('span').option-price
+								|142 871.30
+								+b('span').rub o
 						+e.option
 							| Портал поставщиков:
-							+e.option-price 142 871.30
+							+e('span').option-price
+								|142 871.30
+								+b('span').rub o
 						+e.btn.js-modal-btn(data-modal="add")
 							+b('a').main-btn(href="#") Купить
 				+e.bottom
@@ -102,4 +112,4 @@ mixin detail-card()
 								+e.product Apple Magic Mouse White Bluetooth
 									+e.price 6 060 c
 						+e.nav.js-next
-							+svg('svg-icon icon__go ','go')
+							+svg('svg-icon icon__nav ','nav')

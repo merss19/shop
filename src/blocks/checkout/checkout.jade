@@ -2,16 +2,18 @@ include ../header/header
 include ../cart/cart
 include ../breadcrumb/breadcrumb
 include ../footer/footer
+include ../toTop/toTop
 
 
 mixin checkout()
 	+b('body').page
-		+b('section').page.checkout-page__
+		+b('section').page.content__
 			+header()
 			div.container.container_type_main.clearfix
 				+breadcrumb()
 
 				+e('section').cart
 					+cart()
+				+toTop()
 
 			+footer()

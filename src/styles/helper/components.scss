@@ -1,6 +1,7 @@
 //common
 @import '../../blocks/common/common';
 @import '../../blocks/pugination/pugination';
+@import '../../blocks/toTop/toTop';
 
 @import '../../blocks/modal-gallery/modal-gallery';
 @import '../../blocks/modal-add/modal-add';
@@ -13,7 +14,6 @@
 @import '../../blocks/block-products/block-products';
 @import '../../blocks/product/product';
 @import '../../blocks/index/index';
-
 
 //catalog
 @import '../../blocks/breadcrumb/breadcrumb';
@@ -34,3 +34,7 @@
 //checkout
 @import '../../blocks/detail-card/detail-card';
 @import '../../blocks/detail-tabs/detail-tabs';
+
+@import '../../blocks/aboute/aboute';
+@import '../../blocks/menu-side/menu-side';
+@import '../../blocks/company/company';

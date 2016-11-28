@@ -107,8 +107,12 @@
 		}
 		
 		&-desc{
-			font-size:12px;
+			font-size:11px;
 			color:#c1bbbb;
+		}
+
+		&-price{
+			font-weight: bold;
 		}
 	}
 
@@ -139,7 +143,9 @@
 		display: inline-block;
 		border-bottom:1px dotted #ddd;
 		position: relative;
-		top: -8px;
+		top: -10px;
+		left: -3px;
+		letter-spacing: 0.5px;
 
 		&:hover{
 			border-bottom:1px solid #ddd;
@@ -148,12 +154,12 @@
 
 	&__option{
 		font-size:12px;
+		margin: -3px 0 1px 0;
 		color: #ccc9c9;;
 		
 		&-price{
 			font-size:14px;
 			color: #000;
-			display: inline-block;
 			font-weight: bold;
 		}
 
@@ -164,7 +170,7 @@
 	}
 
 	&__bottom{
-		padding:10px 0;
+		padding:17px 0;
 	}
 
 	&__title{

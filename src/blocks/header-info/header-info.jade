@@ -4,7 +4,8 @@ mixin header-info()
 		div.container.clearfix
 			+e.menu
 				+e('a').logo(href="index.html")
-					+svg('svg-icon icon__logo','logo33')
+					//+svg('svg-icon icon__logo','logo33')
+					+e('img')(src="assets/img/logo.svg")
 				+e.right
 					+e.list.clearfix
 						+e.item

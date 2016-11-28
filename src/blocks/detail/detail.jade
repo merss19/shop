@@ -3,11 +3,12 @@ include ../breadcrumb/breadcrumb
 include ../detail-card/detail-card
 include ../detail-tabs/detail-tabs
 include ../block-products/block-products
+include ../toTop/toTop
 include ../footer/footer
 
 mixin detail()
 	+b('body')
-		+b('section').page.detail-page__
+		+b('section').page.content__
 			+header()
 			div.container.container_type_main
 				+breadcrumb()
@@ -16,5 +17,7 @@ mixin detail()
 
 				+e('section').card
 					+detail-tabs()
+
+				+toTop()
 
 			+footer()

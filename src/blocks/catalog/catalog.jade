@@ -6,11 +6,12 @@ include ../product-list/product-list
 include ../pugination/pugination
 include ../sell/sell
 include ../footer/footer
+include ../toTop/toTop
 
 
 mixin catalog()
 	+b('body')
-		+b('section').page.catalog-page__
+		+b('section').page.content__
 			+header()
 			div.container.container_type_main.clearfix
 				+breadcrumb()
@@ -24,6 +25,7 @@ mixin catalog()
 					+product-list()
 
 				+pugination()
+				+toTop()
 
 				//+e('section').products-new
 					+block-products(products.new, 'Новинки')

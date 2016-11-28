@@ -14,7 +14,7 @@ mixin delivery()
 					+e.line.clearfix
 						+e.box.col-50
 							+e('label').title Ближайшая станция метро
-							+e('select').item
+							+e('select').metro.js-select-metro
 								+b('option') Боровицкая
 								+b('option') Курская
 					+e.line
@@ -43,6 +43,8 @@ mixin delivery()
 						+e('p') В случае доставки товара на территорию с платным въездом, оплата за въезд осуществляется за счет покупателя. В противном случае, доставка осуществляется до места платного въезда.
 				+e.total
 					|Стоимость доставки:
-					+e.total-sum  500
+					+e('span')
+						|500
+						+b('span').rub o
 			+e.box.js-tabs__box#pickup 2
 			+e.box.js-tabs__box#company 3

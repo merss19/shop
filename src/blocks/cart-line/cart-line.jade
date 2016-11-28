@@ -9,9 +9,14 @@ mixin cart-line(kind)
 		+e.item_type_amount
 			+e('input').item-amount(type="text", value="10")
 		+e.item_type_price
-			+e.item-price 133 000
+			+e.item-price
+				|133 000
+				+b('span').rub o
 		if kind !== "drop"
-			+e.item_type_discount  0
-			+e.item_type_total 137 888
+			+e.item_type_discount
+				+e.item-discount 0
+			+e.item_type_total
+				|137 888
+				+b('span').rub o
 		+e.item_type_delete
 			+svg('cart-line__delete js-cart__delete','delete')

@@ -1,12 +1,13 @@
 include ../header/header
 include ../block-banner/block-banner
 include ../block-products/block-products
+include ../toTop/toTop
 include ../footer/footer
 
 
 mixin index()
 	+b('body')
-		+b('section').page.main-page__
+		+b('section').page.content__
 			+header()
 			div.container.container_type_main.clearfix
 				+e('section').banner
@@ -20,5 +21,6 @@ mixin index()
 
 				+e('section').products-new
 					+block-products(products.new, 'Новинки')
+				+toTop()
 
 			+footer()

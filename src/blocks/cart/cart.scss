@@ -60,7 +60,7 @@
 			}
 
 			&:nth-child(6){
-				width:5%;
+				width:6%;
 			}
 
 		}
@@ -70,10 +70,6 @@
 		font-family:$futuraDemi;
 		text-align: right;
 		font-size:16px;
-
-		&-sum{
-			display: inline-block;
-		}
 	}
 
 	&__empty{
@@ -111,7 +107,6 @@
 
 
 		&-sum{
-			display: inline-block;
 			font-family:$futuraBook;
 		}
 	}

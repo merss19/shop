@@ -16,7 +16,7 @@
 		width: 10px;
 		height: 36px;
 		background: #ddd;
-		right: 11px;
+		right: 0;
 		position: absolute;
 		top: 36%;
 		cursor: pointer;
@@ -33,9 +33,9 @@
 		line-height: 19px;
 	}
 
-	.icon__go{
-		position: relative;
-		top: 10px;
+	.icon__nav{
+		//position: relative;
+		top: 12px;
 		left: 2px;
 
 	}

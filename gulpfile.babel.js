@@ -26,6 +26,8 @@ import path from 'path'
 import sass from 'gulp-sass'
 import data from 'gulp-data'
 import  concat from  'gulp-concat'
+import autoprefixer from 'gulp-autoprefixer'
+import sassGlob from 'gulp-sass-glob'
 
 gulp.task('svgstore', function () {
     return gulp
@@ -74,12 +76,16 @@ const bs = require("browser-sync").create();
 ));*/
     gulp.task('css', () => {
      gulp.src('src/styles/app.scss')
+     .pipe(sassGlob())
      .pipe(plumber({errorHandler: errorHandler(`Error in \'css\' task`)}))
      .pipe(sourcemaps.init())
      .pipe(sass({
      'include css': true
      }))
      .on('error', notify.onError())
+     .pipe(autoprefixer({
+         browsers: ['last 2 versions']
+     }))
      .pipe(gcmq())
      .pipe(sourcemaps.write())
      .pipe(gulp.dest('dist/assets/css'))

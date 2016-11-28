@@ -94,8 +94,35 @@ option{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
+.header-page{
+	font-size: 36px;
+	font-family:$futuraBold;
+}
+.content{
 
+	&__products-new{
+		padding-top:20px;
+	}
 
+	&__banner{
+		padding-top:38px;
+	}
+
+	&__side{
+		float: left;
+		width:24%;
+	}
+
+	&__main{
+		float: left;
+		width:76%;
+		padding-left:19px;
+	}
+}
+
+input:focus{
+	box-shadow: 0 0 3px 1px rgba(221, 221, 221, 0.57);
+}
 
 .svg-icon {
 	position: absolute;
@@ -232,6 +259,18 @@ option{
 		fill:#ccc;
 		width:18px;
 		height:18px;
+	}
+
+	&__toTop{
+		width:37px;
+		height:37px;
+		fill:$color-main;
+	}
+
+	&__nav{
+		width:5px;
+		height:12px;
+		fill:#797575;
 	}
 }
 

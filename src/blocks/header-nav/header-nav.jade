@@ -39,7 +39,8 @@ mixin header-nav()
 						+e('li').item
 							+e('a').link(href="") Компьютеры, ноутбуки, планшеты
 			+e.search
-				+e('input').input(placeholder="Поиск товаров").js-autocomplete
+				+e('input').input(type="text", placeholder="Поиск товаров").js-autocomplete
+				+e.autocomplete
 			+e.user.js-drop__root
 				+e('button').item._type_cart.js-drop__btn
 					+e.item-text

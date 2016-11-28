@@ -35,10 +35,6 @@
 		clear: both;
 		font-family:$futuraDemi;
 		padding: 33px 24px 0 0;
-
-		&-sum{
-			display: inline-block;
-		}
 	}
 }
 
@@ -75,15 +71,6 @@
 			font-family: $futuraBold;
 			border-bottom: 4px solid $color-main;
 		}
-			/*&:after{
-				content: '';
-				display: block;
-				position: relative;
-				bottom:0;
-				left:0;
-				background: $color-main;
-				height:4px;
-				width:140px;*/
 
 
 	}
@@ -113,11 +100,49 @@
 
 	&__box {
 		padding: 0 10px;
+
+
+		.selectize-control.single .selectize-input{
+			&:after{
+				content: '';
+				display: block;
+				width: 8px;
+				height: 8px;
+				border-width: 0;
+				border-color: #fff;
+				border-right: 1px solid #222;
+				border-bottom: 1px solid #222;
+				transform: rotate(45deg);
+				position: absolute;
+				right: 16px;
+				top: 14px;
+			}
+
+			&.dropdown-active{
+				&:after{
+
+					content: '';
+					display: block;
+					width: 8px;
+					height: 8px;
+					border-width: 0;
+					border-color: #fff;
+					border-right: 1px solid #222;
+					border-bottom: 1px solid #222;
+					transform: rotate(225deg);
+					top: 18px;
+				}
+			}
+
+		}
 	}
 	
 	&__note{
 		font-size:10px;
 		color: #cecaca;
+	}
+
+	&__metro{
 	}
 }
 

@@ -2,7 +2,6 @@
 
 
 
-/*
 const drop = (($) => {
 
     const NAME                     = 'drop'
@@ -10,26 +9,39 @@ const drop = (($) => {
     const JQUERY_NO_CONFLICT       = $.fn[NAME]
 
 
-    /!**
+    /**
      * ------------------------------------------------------------------------
      * Class Definition
      * ------------------------------------------------------------------------
-     *!/
+     */
 
     class Drop {
 
         constructor(element) {
             this.element = element
 
-      /!*      console.log('drop')
 
-            console.log( this.element)*!/
 
             this.list = $(this.element).closest('.js-drop__root').find('.js-drop__list')
                this.overlay = $('.overlay_type_drop')
             this.addEventListeners()
 
-            //$(document).on('click', this.close)
+            $(window).on('scroll', () => {
+                let scrollTop = $(window).scrollTop(),
+                    top = 213 - scrollTop
+                if (top < 0) {
+                    top = 0
+                }
+                console.log(scrollTop)
+
+                let  overlay = $('.overlay_type_drop')
+
+
+                overlay.css('top', ( top))
+
+            })
+
+
 
         }
 
@@ -53,45 +65,62 @@ const drop = (($) => {
                 return
             }
             console.log('show')
-          // let active = $(this.element).hasClass('active')
 
-                console.log('in')
-                //$(document).off('click.close', this.close.bind(this))
+            let lists = $('.js-drop__list')
+            console.log('lists')
+            console.log(lists)
+            for(let i = 0; i < lists.length; i++){
+                $(lists[i]).fadeOut()
+            }
+
+
+
+            console.log('in')
+
                 $(this.element).addClass('active')
-                this.overlay.fadeIn()
+                this.overlay.stop(true).fadeIn()
 
-                this.list.fadeIn()
-
-
-
-                    $(window).on('scroll',() =>{
-                        let scrollTop =  $(window).scrollTop(),
-                            top = 213 - scrollTop
-                            if(top < 0 ){
-                                top = 0
-                            }
-                        console.log(scrollTop)
-
-
-                        this.overlay.css('top', ( top))
-
-                    })
+                this.list.stop(true).fadeIn()
 
 
 
+            $(window).on('scroll', () => {
+                let scrollTop = $(window).scrollTop(),
+                    top = 213 - scrollTop
+                if (top < 0) {
+                    top = 0
+                }
+                console.log(scrollTop)
+
+                let  overlay = $('.overlay_type_drop')
+
+
+                overlay.css('top', ( top))
+
+            })
+
+            setTimeout(() => {
+                console.log(this.overlay)
+                this.overlay.on('click',(e)=>{
+                    let target = $(e.target)
+                    if(target.hasClass('js-drop__btn') || target.closest('.js-drop__list').length) return
+                    console.log('close')
+
+                    let btns = $('.js-drop__btn')
+                    this.overlay.stop(true).fadeOut()
+                    this.list.stop(true).fadeOut()
+
+                    for(let i = 0; i < btns.length; i++){
+                        $(btns[i]).removeClass('active')
+                    }
 
 
 
-          /!*  if (active) {
-                console.log('out')
-                this.overlay.fadeOut()
-                $(this.element).removeClass('active')
 
-                this.list.stop().fadeOut()
+                })
 
+            }, 10);
 
-
-            }*!/
 
         }
 
@@ -99,44 +128,14 @@ const drop = (($) => {
             if (!$(this.element).hasClass('active')) return
 
                 console.log('hide')
-                this.overlay.fadeOut()
+                this.overlay.stop(true).fadeOut()
                 $(this.element).removeClass('active')
 
-                this.list.stop().fadeOut()
+                this.list.stop(true).fadeOut()
 
 
 
 
-        }
-
-
-        close(e) {
-            console.log('close')
-       /!*     let active = $(this.element).hasClass('active')
-            console.log('close')
-            if ($(e.target).closest('.js-drop__list').length || $(e.target).hasClass('.js-drop__list')) {
-                $(this.overlay).off('click.close', this.close.bind(this))
-                return
-            }
-            console.log('close-action')
-            this.overlay.fadeOut()
-            this.list.stop().fadeOut()
-            $(this.element).toggleClass('active')
-            $('body').off('click.close', this.close.bind(this))*!/
-            //this.overlay.fadeOut()
-        /!*    if (!$(e.target).closest('.js-drop__list')) {
-                list.fadeOut()
-            }
-
-
-            let
-            btns = $('.js-drop__btn')
-                 $(document).on('click', function (e) {
-                    console.log($(e.target).closest('.js-drop__list'))
-                    if (!$(e.target).closest('.js-drop__list')) {
-                        list.fadeOut()
-                    }
-                }) *!/
         }
 
 
@@ -178,11 +177,11 @@ const drop = (($) => {
     return Drop
 
 })(jQuery)
-*/
 
 
 
 
+/*
 const drop = {
 
     init: function() {
@@ -196,10 +195,25 @@ const drop = {
         }
 
 
+        $(window).on('scroll', () => {
+            let scrollTop = $(window).scrollTop(),
+                top = 213 - scrollTop
+            if (top < 0) {
+                top = 0
+            }
+            console.log(scrollTop)
+
+            let  overlay = $('.overlay_type_drop')
+
+
+            overlay.css('top', ( top))
+
+        })
+
 
 
     },
-/*
+/!*
 
     toggle: function(e){
         console.log('toggle')
@@ -240,7 +254,7 @@ const drop = {
         }*!/
 
     },
-*/
+*!/
 
     toggle(e) {
         //console.log('toggle')
@@ -333,17 +347,17 @@ const drop = {
     close: function(e){
         console.log('close')
 
-       /* if(!$(e.target).closest('.js-drop__list')){
+       /!* if(!$(e.target).closest('.js-drop__list')){
             list.fadeOut()
-        }*/
+        }*!/
 
         let btns = $('.js-drop__btn')
-      /*  $(document).on('click', function(e){
+      /!*  $(document).on('click', function(e){
             console.log($(e.target).closest('.js-drop__list'))
             if(!$(e.target).closest('.js-drop__list')){
                 list.fadeOut()
             }
-        })*/
+        })*!/
 
 
     }
@@ -351,6 +365,7 @@ const drop = {
 
 
 }
+*/
 
 
 

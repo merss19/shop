@@ -4,6 +4,7 @@
 	border:1px solid #ebebeb;
 	padding: 14px 10px 0;
 	transition:all 0.4s;
+	position: relative;
 
 	&:hover{
 		box-shadow: 0px 0px 5px 1px #dcd8d8;
@@ -112,16 +113,40 @@
 	
 	&__sticker{
 		position: absolute;
-		top:0;
-		left:0;
-		text-transform: uppercase;
-		color: #fff;
-		width:220px;
-		height:20px;
-		padding:2px;
-		text-align: center;
-		background: $color-mark;
+		top:27px;
+		left:8px;
+		z-index:2;
 	}
+}
 
+.sticker{
+	text-transform: uppercase;
+	color: #fff;
+	width:75px;
+	height:21px;
+	padding: 3px 15px;
+	text-align: center;
+	background: $color-mark;
+	font-size: 10px;
+	letter-spacing: -0.9px;
+
+	&_type{
+		&_arrow{
+			background: $color-main;
+
+			&:after{
+				content: '';
+				display: inline-block;
+				top: 3px;
+				position: absolute;
+				right: -10px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 10px 0 10px 10px;
+				border-color: transparent transparent transparent $color-main;
+			}
+		}
+	}
 }
 

@@ -2,10 +2,10 @@ include ../svg/svg
 
 mixin product(product)
 	+b.product
+		+e.sticker
+			+b('span').sticker_type_arrow новинка
 		+e('a').pic(href="detail.html")
 			+e('img').img(src = '#{ product.preview }')
-			//+e.sticker._type_new
-				+e.sticker-value новинка
 		+e.desc
 			+e('a').desc-link(href="") #{ product.text }
 		+e.code
