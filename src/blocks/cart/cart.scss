@@ -1,12 +1,12 @@
 .cart{
-	padding:8px 0;
+	padding:1px 0;
 	background: #fff;
 	color: #222;
 
 	&__header{
 		font-size:30px;
-		font-family:$openSansBold;
-		letter-spacing: -0.8px;
+		font-family:$CoText;
+		letter-spacing: -3px;
 	}
 
 	&__item{
@@ -20,7 +20,7 @@
 	}
 
 	&__title{
-		padding:40px 0 10px;
+		padding:40px 0 9px;
 		font-size:18px;
 		font-family:$futuraBook;
 		text-transform: uppercase;
@@ -56,11 +56,11 @@
 			}
 
 			&:nth-child(5){
-				width:12%;
+				width:10.7%;
 			}
 
 			&:nth-child(6){
-				width:6%;
+				width:6.9%;
 			}
 
 		}
@@ -70,6 +70,9 @@
 		font-family:$futuraDemi;
 		text-align: right;
 		font-size:16px;
+		font-weight: bold;
+		padding: 4px 6px 0 0;
+		letter-spacing: -0.3px;
 	}
 
 	&__empty{
@@ -92,6 +95,7 @@
 		display: table-cell;
 		padding: 0 3px;
 		text-align: right;
+		font-weight: bold;
 
 		&_type{
 			&_value{
@@ -104,10 +108,12 @@
 		padding: 13px 0;
 		font-family:$futuraDemi;
 		font-size:24px;
+		font-weight: bold;
 
 
 		&-sum{
 			font-family:$futuraBook;
+			font-weight: normal;
 		}
 	}
 

@@ -10,18 +10,27 @@
 	&__item {
 		display: inline-block;
 		position: relative;
-		padding: 0 4px;
+		padding: 0 3px;
+
+		&:first-child{
+			padding-right:9px;
+		}
+
+		&:last-child{
+			padding-left:8px;
+		}
 	}
 
 	&__link {
 		color: #000;
-		padding: 5px 8px;
+		padding: 5px 7.3px;
 		border:1px solid #ddd;
 		display: block;
 
 		&_type{
 			&_nav{
 				padding:0 12px;
+				font-size:14px;
 				color: #000;
 				text-decoration: underline;
 				border:none;
@@ -42,7 +51,7 @@
 		}
 
 		&.active {
-			color: $color-grey;
+			color: #ccc;
 			cursor: text;
 		}
 	}

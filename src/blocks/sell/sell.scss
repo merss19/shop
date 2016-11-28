@@ -13,6 +13,7 @@
 
 	&__title{
 		font-size:18px;
+		font-weight: bold;
 		font-family:$futuraBold;
 	}
 
@@ -36,7 +37,7 @@
 	}
 
 	&__info{
-		padding: 16px 0 5px;
+		padding: 16px 0 8px;
 	}
 
 	&__item{
@@ -54,11 +55,14 @@
 			&_job{
 				font-size:13px;
 				color:#8e8d8d;
+				line-height:15.6px;
+				padding-top:5px;
 			}
 
 
 			&_contacts{
-				padding: 2px 0;
+				padding: 3px 0;
+				line-height:14.4px;
 			}
 		}
 	}

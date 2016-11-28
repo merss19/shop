@@ -125,7 +125,7 @@
 			font-size:12px;
 			display: table-cell;
 			width: 61%;
-			color: #716767;
+			color: #666666;
 		}
 
 		&-value{
@@ -358,13 +358,15 @@
 
 	&__text{
 		font-size:12px;
+		color: #999;
 		display: inline-block;
 	}
 
 	&__num{
 		display: inline-block;
 		font-size:14px;
-		color: $color-main;
+		color: $color-main-hover;
+		font-weight: bold;
 		font-family:$futuraDemi;
 		letter-spacing: 0.4px;
 	}
@@ -394,12 +396,12 @@
 
 	.icon__wish{
 		top: -17px;
-		right: -27px;
+		right: -25px;
 	}
 
 	.icon__wish-fill{
 		top: -17px;
-		right: -27px;
+		right: -25px;
 		display: none;
 	}
 

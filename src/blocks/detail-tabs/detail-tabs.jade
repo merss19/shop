@@ -1,7 +1,7 @@
 mixin detail-tabs()
 	+b.detail-tabs
 		+e('ul').list.clearfix.js-tabs.tabs-main__
-			+e('li').item
+			+e('li').item.active
 				+e('a').link.js-tabs__item.active(data-id= '#options') Характеристики
 			+e('li').item
 				+e('a').link.js-tabs__item(data-id = '#reviews') Отзывы
@@ -10,7 +10,7 @@ mixin detail-tabs()
 				+e('a').link.js-tabs__item(data-id = '#faq') Вопросы и ответы
 				+e.notice 9
 		+e.content.js-tabs__content
-			+e.item.js-tabs__box.clearfix.active#options
+			+e.item.js-tabs__box.clearfix#options
 				+e.boxes
 					each item in detail.options
 						+e.box
@@ -21,7 +21,7 @@ mixin detail-tabs()
 										+e.cell_type_value=val.option
 										+e.cell=val.value
 				+e.recent.block-products__
-					+e.title_type_aside Вы недавно смотрели
+					+e.title_type_section Вы недавно смотрели
 					+e.content
 						+e('ul').list.clearfix
 							each item in products.best
@@ -52,9 +52,11 @@ mixin detail-tabs()
 							+e.right
 								+e.desc
 									|Автор
-									+e.desc-sum 17
-									|отзывов
-								+e.experience Опыт использования: несколько месяцев
+									+e('span').desc-sum 17
+									|  отзывов
+								+e.experience
+									|Опыт использования:
+									+e('span') несколько месяцев
 							+e.date 22 октября, Красноярск
 						+e.text
 							p Достоинства:
@@ -79,8 +81,8 @@ mixin detail-tabs()
 							+e.right
 								+e.desc
 									| Автор
-									+e.desc-sum 17
-									| отзывов
+									+e('span').desc-sum 17
+									|  отзывов
 								+e.experience
 									|Опыт использования:
 									+e.experience-value несколько месяцев
@@ -94,7 +96,7 @@ mixin detail-tabs()
 							p Недостатки:
 							p Камера неплохая, но точно хуже S7. Плюс она то быстро запустится, то секунд 5 тупит.
 							p Камера неплохая, но точно хуже S7. Плюс она то быстро запустится, то секунд 5 тупит.Многозад
-			+e.item.js-tabs__box.clearfix#faq
+			+e.item.js-tabs__box.clearfix.active#faq
 				+b.block-faq
 					+e.list
 						+e.item.clearfix

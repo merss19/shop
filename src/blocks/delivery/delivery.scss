@@ -2,7 +2,7 @@
 	padding: 0 0 17px;
 
 	&__content{
-		padding:7px 0;
+		padding:11px 0;
 	}
 
 	&__list{
@@ -10,7 +10,7 @@
 	}
 
 	&__item{
-		padding:0 10px;
+		padding:0 7px;
 	}
 
 	&__box{
@@ -25,8 +25,9 @@
 
 		&-title{
 			font-size: 16px;
-			padding: 13px 0 1px 0;
+			padding: 10px 0 1px 0;
 			font-family:$futuraBold;
+			font-weight: bold;
 		}
 	}
 
@@ -35,15 +36,17 @@
 		clear: both;
 		font-family:$futuraDemi;
 		padding: 33px 24px 0 0;
+		font-weight: bold;
 	}
 }
 
 .tabs-nav{
-	border-bottom:9px solid #f2f2f2;
+	border-bottom:10px solid #f2f2f2;
 	
 	&__item{
 		float: left;
 		padding:0 15px;
+		margin-bottom: -4px;
 
 		&:first-child{
 			padding-left:0;
@@ -60,9 +63,10 @@
 		font-size:12px;
 		font-family:$futuraDemi;
 		color: #9a9898;
+		font-weight: bold;
 		text-transform: uppercase;
 		position: relative;
-		border-bottom:4px solid transparent;
+		border-bottom:3px solid transparent;
 		letter-spacing:0.8px;
 		cursor: pointer;
 
@@ -79,7 +83,7 @@
 .form-block{
 
 	&__line{
-		padding:4px 0 1px;
+		padding:4px 0 0px;
 		width:100%;
 		margin:0 -10px;
 	}
@@ -87,40 +91,29 @@
 	&__title{
 		font-size:12px;
 		font-family:$openSansBold;
-		padding:10px 0;
+		padding: 8px 1px 10px;
 		display: block;
+		font-weight: bold;
 	}
 
 	&__item{
 		padding:7px 8.5px;
 		width:100%;
-		border:1px solid #ddd;
+		border:2px solid #f2f2f2;
 		font-size: 14px;
 	}
 
 	&__box {
 		padding: 0 10px;
 
+		.selectize-control.single {
+			margin-top: 2px;
 
-		.selectize-control.single .selectize-input{
-			&:after{
-				content: '';
-				display: block;
-				width: 8px;
-				height: 8px;
-				border-width: 0;
-				border-color: #fff;
-				border-right: 1px solid #222;
-				border-bottom: 1px solid #222;
-				transform: rotate(45deg);
-				position: absolute;
-				right: 16px;
-				top: 14px;
-			}
+			.selectize-input{
+				border: 2px solid #f2f2f2;
+				box-shadow: none;
 
-			&.dropdown-active{
 				&:after{
-
 					content: '';
 					display: block;
 					width: 8px;
@@ -129,12 +122,33 @@
 					border-color: #fff;
 					border-right: 1px solid #222;
 					border-bottom: 1px solid #222;
-					transform: rotate(225deg);
-					top: 18px;
+					transform: rotate(45deg);
+					position: absolute;
+					right: 16px;
+					top: 14px;
 				}
+
+				&.dropdown-active{
+					&:after{
+
+						content: '';
+						display: block;
+						width: 8px;
+						height: 8px;
+						border-width: 0;
+						border-color: #fff;
+						border-right: 1px solid #222;
+						border-bottom: 1px solid #222;
+						transform: rotate(225deg);
+						top: 18px;
+					}
+				}
+
 			}
 
 		}
+
+
 	}
 	
 	&__note{
@@ -142,8 +156,6 @@
 		color: #cecaca;
 	}
 
-	&__metro{
-	}
 }
 
 

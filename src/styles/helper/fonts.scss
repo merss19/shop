@@ -3,11 +3,12 @@ $openSansReg: 'openSansReg', Helvetica, Arial, sans-serif;
 $openSansBold: 'openSansBold', Helvetica, Arial, sans-serif;
 $openSansSemiBold: 'openSansSemiBold', Helvetica, Arial, sans-serif;
 
-$futuraDemi: 'futuraDemi', Helvetica, Arial, sans-serif;
-$futuraHeavy: 'futuraHeavy', Helvetica, Arial, sans-serif;
-$futuraBook: 'futuraBook', Helvetica, Arial, sans-serif;
-$futuraBold: 'futuraBold', Helvetica, Arial, sans-serif;
+$futuraDemi: 'futura-pt', Helvetica, Arial, sans-serif;
+$futuraHeavy: 'futura-pt', Helvetica, Arial, sans-serif;
+$futuraBook: 'futura-pt', Helvetica, Arial, sans-serif;
+$futuraBold: 'futura-pt', Helvetica, Arial, sans-serif;
 $rub: 'rub', Helvetica, Arial, sans-serif;
+$CoText: 'co-text', Helvetica, Arial, sans-serif;
 
 @font-face {
   font-family: 'rub';
@@ -112,7 +113,6 @@ $rub: 'rub', Helvetica, Arial, sans-serif;
 .rub {
 	font-family: $rub;
 	text-transform: none;
-	font-weight:bold;
 }
 //буквы для рубля
 /*a — Arial Regular

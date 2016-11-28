@@ -1,7 +1,8 @@
 .menu-side{
 	width:100%;
-	border:1px solid #e9e9e9;
+	border:1px solid #e7e7e7;
 	margin-top:13px;
+	box-shadow: 0 0 2px 0 #ebebeb;
 
 	&:first-child{
 		margin-bottom: 39px;
@@ -9,7 +10,6 @@
 
 	&__item {
 		position: relative;
-
 		background: #fff;
 
 		&:after {
@@ -24,6 +24,12 @@
 			border-bottom: 1px solid #6c6c6c;
 			transform: rotate(-45deg);
 		}
+
+		&:last-child{
+			.menu-side__link{
+				border-bottom:0;
+			}
+		}
 	}
 
 	&__link {
@@ -34,7 +40,7 @@
 		padding: 10px 12px;
 		text-decoration: none;
 		letter-spacing: 0.8px;
-		border-bottom:1px solid #e9e9e9;
+		border-bottom:1px solid #e7e7e7;
 		transition:all 0.4s;
 
 		&:hover{
@@ -44,7 +50,7 @@
 
 		&.active {
 			text-decoration: none;
-			color: #323232;
+			color: #333;
 			background: #f2f2f2;
 			cursor: text;
 		}

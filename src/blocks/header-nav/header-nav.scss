@@ -8,17 +8,17 @@
 	.icon__list{
 		z-index:2;
 		top: 29px;
-		left: 77px;
+		left: 76px;
 	}
 
 	.icon__cart{
-		top: 32px;
-		left: 16px;
+		top: 31px;
+		left: 13px;
 	}
 
 	.icon__user{
 		top: 31px;
-		left: 8px;
+		left: 7px;
 	}
 	&__drop{
 		&-menu{
@@ -50,7 +50,7 @@
 		width: 100%;
 		height:80px;
 		font-family:$futuraHeavy;
-		//transition:all 0.4s;
+		font-weight:bold;
 		
 		&:hover{
 			background: $color-main-hover;
@@ -135,11 +135,11 @@
 		float: left;
 		position: relative;
 		width:47.3%;
-		padding: 32px 0 0 32px;
+		padding: 31px 0 0 32px;
 		height: 80px;
 		text-align: center;
 		cursor: pointer;
-		//transition:all 0.4s;
+		font-weight:bold;
 
 		&:hover{
 			background: $color-main-hover;
@@ -173,7 +173,7 @@
 			}
 
 			&_cart{
-				padding: 19px 0 0 15px;
+				padding: 16px 0 0 15px;
 			}
 
 
@@ -187,18 +187,18 @@
 	}
 
 	&__num{
-		display: inline-block;
-		padding-right: 2px;
+		font-weight:normal;
 	}
 
 	&__auth{
 		text-align: left;
-		margin: -2px 0 0 -2px;
+		margin: -1px 0 0 -2px;
 		font-family:$openSansReg;
 
 		&-result{
 			padding-left: 5px;
 			font-size: 12px;
+			font-weight:normal;
 		}
 	}
 }

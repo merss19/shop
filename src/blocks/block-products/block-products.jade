@@ -9,3 +9,40 @@ mixin block-products(type, title)
 				each item in type
 					+e('li').item
 						+product(item)
+				+e('li').item
+					+b.product
+						+e.sticker
+							+b('span').sticker новинка
+						+e('a').pic(href="detail.html")
+							+e('img').img(src = 'assets/img/content/imac-2.jpg')
+						+e.desc
+							+e('a').desc-link(href="") Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB
+						+e.code
+							| код товара:
+							+e.code-value 219-926
+						+e.bottom.clearfix
+							+e.special.clearfix
+								+e.special-delivery
+									+e.special-icon
+										+svg('svg-icon icon__auto','auto')
+									+e('span').special-desc доставим сегодня
+							+e.price
+								+e.price-main
+									| 48 000
+									+b('span').rub o
+				+e('li').item
+					+b.product
+						+e.sticker
+							+b('span').sticker новинка
+						+e('a').pic(href="detail.html")
+							+e('img').img(src = 'assets/img/content/imac-2.jpg')
+						+e.desc
+							+e('a').desc-link(href="") Apple iMac (MK462RU/A) 27» Retina (5120х2880) 5K i5 3.2GHz (TB 3.6GHz)/8GB/1TB/R9 M380 2GB
+						+e.code
+							| код товара:
+							+e.code-value 219-926
+						+e.bottom.clearfix
+							+e.price
+								+e.price-main
+									| 48 000
+									+b('span').rub o

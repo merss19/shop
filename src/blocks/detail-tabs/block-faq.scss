@@ -11,8 +11,8 @@
 		&_type{
 			&_answer{
 				position: relative;
-				margin-left: 27px;
-				padding: 59px 0
+				margin-left: 28px;
+				padding: 60px 0;
 			}
 		}
 	}
@@ -23,9 +23,10 @@
 	}
 
 	&__name{
-		color: $color-main;
+		color: #07bc28;
 		font-family:$openSansBold;
-		line-height: 20px;
+		line-height: 16.8px;
+		font-size:14px;
 	}
 
 
@@ -39,12 +40,6 @@
 
 	.block-star{
 		margin:4px 0 0 0;
-	}
-	
-	&__name{
-		font-family:$openSansBold;
-		font-size:12px;
-		color: $color-main;
 	}
 
 	&__value{
@@ -77,8 +72,8 @@
 	}
 
 	&__date{
-		font-size:14px;
-		color: #908c8c;
+		font-size:12px;
+		color: #999;
 		float: right;
 	}
 

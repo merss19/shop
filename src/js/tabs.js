@@ -53,19 +53,15 @@ const tabs = (($) => {
 
             for(let i = 0; i < navs.length; i++){
                 $(navs[i]).removeClass('active')
+                $(navs[i]).parent().removeClass('active')
             }
 
 
             $this.addClass('active')
+            $this.parent().addClass('active')
 
             this.block.siblings().removeClass('active')
             this.block.addClass('active')
-
-            console.log( navs)
-            console.log($this)
-            console.log(link)
-            console.log( content)
-            console.log(this.block)
 
             this.gallery()
 

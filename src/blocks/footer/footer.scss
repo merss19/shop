@@ -30,45 +30,54 @@
 	}
 
 	&__title{
-		padding:21px 0 10px;
+		padding:18px 0 10px;
 		font-size:18px;
 		text-transform: uppercase;
-		letter-spacing: 1px;
-		color: #9a9a9a;
+		letter-spacing: 1.2px;
+		color: #999999;
 		font-family:$futuraBook;
 	}
 
 	&__phone{
-		padding:3px 0;
+		padding:3px 0 3px 2px;
 		font-size:24px;
+		line-height: 29px;
+		letter-spacing: -0.6px;
+		color: #333;
 	}
 
 	&__mail{
-		padding:5px 0;
+		padding: 7px 0 5px 2px;
 		font-size:24px;
 		letter-spacing: 0.5px;
+		line-height: 29px;
+		color: #333;
 	}
 
 	&__address{
 		padding:16px 0;
 		font-size:13px;
-		line-height:18px;
+		line-height:19px;
 		font-family:$openSansReg;
 		letter-spacing: -0.8px;
 		padding-right: 45px;
+		color: #333;
 	}
 
 	&__social{
-		margin-top:34px;
+		margin-top:32px;
 	}
 
 	&__item{
-		padding:1px 0;
+		padding:2px 0;
+		line-height:15.6px;
 	}
 	
 	&__link{
 		color: #969696;
 		text-decoration: underline;
+		display: inline-block;
+		font-size:13px;
 
 		&:hover{
 			text-decoration: none;
@@ -79,16 +88,17 @@
 		padding:9px 0;
 	}
 	&__copyright{
-		margin-top: 139px;
+		margin-top: 144px;
 		padding-left: 5px;
 		font-size: 14px;
+		color: #666;
 	}
 
 }
 .block-social{
 	&__title{
 		text-transform: uppercase;
-		padding:10px 0;
+		padding: 10px 0 12px;
 		font-size:18px;
 		letter-spacing: 1px;
 		color: #9a9a9a;
@@ -96,8 +106,8 @@
 	}
 	
 	&__list{
-		padding: 2px 0;
-		margin:0 -4px;
+		padding: 3px 0;
+		margin: 0 -5px;
 	}
 	
 	&__item{

@@ -47,8 +47,9 @@ mixin header-nav()
 						+svg('svg-icon icon__cart','cart')
 						+e.item-value Корзина
 						+e.total
-							+e.num 2389
-							| руб.
+							+e('span').num
+								|2 389
+								| руб.
 				+e.drop-cart.js-drop__list
 					+cart-box()
 				+e.item._type_profile

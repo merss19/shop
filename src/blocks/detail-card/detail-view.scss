@@ -89,6 +89,8 @@
 				width:41%;
 				float: left;
 				text-align: right;
+				margin-top:-3px;
+				padding-right:1px;
 			}
 		}
 	}
@@ -103,12 +105,14 @@
 
 		&-text{
 			font-size:12px;
-			line-height: 17px;
+			line-height: 14.4px;
 		}
 		
 		&-desc{
 			font-size:11px;
 			color:#c1bbbb;
+			line-height: 13.2px;
+			padding-top: 3.5px;
 		}
 
 		&-price{
@@ -125,14 +129,15 @@
 		&-desc{
 			font-size: 8px;
 			padding-left: 31px;
-			margin-top: -2px;
+			margin-top: -4px;
+			color: #b3b3b3;
 		}
 	}
 
 	&__price{
 		font-size:36px;
 		font-family:$openSansBold;
-		line-height: 41px;
+		line-height: 43.2px;
 	}
 
 
@@ -154,8 +159,9 @@
 
 	&__option{
 		font-size:12px;
-		margin: -3px 0 1px 0;
-		color: #ccc9c9;;
+		margin: -3px 2px 8px 0;
+		color: #b3b3b3;
+		line-height: 14.4px;
 		
 		&-price{
 			font-size:14px;
@@ -166,24 +172,24 @@
 	}
 
 	&__btn{
-		padding: 22px 0 14px;
+		padding: 16px 0 14px;
 	}
 
 	&__bottom{
-		padding:17px 0;
+		padding:18px 0;
 	}
 
 	&__title{
 		font-size:12px;
 		font-family:$openSansBold;
-/*		font-family:"Co Text";
-		font-family:"Futura PT";*/
 		text-transform: uppercase;
+		line-height: 14.4px;
+		letter-spacing: 0.3px;
 	}
 
 	.icon__delivery{
-		left: -52px;
-		top: 3px;
+		left: -50px;
+		top: 0px;
 	}
 
 	.icon__home{
@@ -191,8 +197,8 @@
 	}
 
 	.icon__stock{
-		left: -40px;
-		top: -2px;
+		left: -37px;
+		top: -6px;
 		width:26px;
 		height:28px;
 	}

@@ -1,17 +1,18 @@
 .filter {
 	padding: 7px 10px;
-	border:1px solid #ddd;
+	border:1px solid #e6e6e6;
 
 	&__title {
 		font-size:12px;
 		font-family:$futuraBold;
 		text-transform: uppercase;
+		font-weight: bold;
 		letter-spacing: 0.7px;
 	}
 
 
 	&__list{
-		padding:15px 0;
+		padding:16px 0;
 	}
 
 	&__box{
@@ -23,7 +24,6 @@
 	}
 
 	&__item{
-		padding:3px 0 0px;
 	}
 
 	&__input{
@@ -33,16 +33,16 @@
 			cursor: pointer;
 			position: relative;
 			padding-left: 29px;
-			color: #8c8a8a;
+			color: #b3b3b3;
 			font-size:12px;
-			line-height: 18px;
+			line-height: 24px;
 
 			&:before{
 				content: "";
 				display: inline-block;
-				height: 20px;
-				width: 18px;
-				border: 1px solid #ddd;
+				height: 19px;
+				width: 19px;
+				border: 1px solid #e6e6e6;
 				position: absolute;
 				top:0;
 				left:0;
